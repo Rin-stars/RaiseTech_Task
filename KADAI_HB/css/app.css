@@ -450,7 +450,7 @@ th {
   }
 }
 
-.js-trigger__cover {
+.l-header__cover {
   position: fixed;
   height: 0;
   width: 100%;
@@ -458,75 +458,6 @@ th {
   left: 0;
   z-index: 9995;
   background: rgba(0, 0, 0, 0.5);
-}
-
-.search {
-  position: relative;
-  width: 318px;
-  height: 46px;
-  margin: 0 auto;
-}
-@media (min-width: 600px) {
-  .search {
-    width: 546px;
-    margin: auto;
-  }
-}
-@media (min-width: 1025px) {
-  .search {
-    margin: auto 20px;
-  }
-}
-
-.search__input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 230px;
-  height: 46px;
-  padding: 0 10px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  border-color: #707070;
-  border-width: 1px;
-  outline: 0;
-  font-size: 18px;
-}
-@media (min-width: 600px) {
-  .search__input {
-    width: 396px;
-  }
-}
-
-.search__img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 24px;
-  height: 24px;
-}
-
-.search__btn {
-  position: absolute;
-  top: 0;
-  left: 240px;
-  text-align: center;
-  width: 78px;
-  height: 46px;
-  background: #F2EDE9;
-  border-radius: 10px;
-  border-color: #707070;
-  border-width: 1px;
-  color: #707070;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "M+ 1m";
-}
-@media (min-width: 600px) {
-  .search__btn {
-    left: 410px;
-    width: 136px;
-  }
 }
 
 .l-section__hero {
@@ -714,44 +645,35 @@ th {
   font-size: 14px;
 }
 
-.l-sidebar {
-  position: absolute;
-  top: 0;
+.p-sidebar {
+  height: 0;
   width: 328px;
   background-color: #F2EDE9;
-  z-index: 9996;
-  right: -100%;
-  height: 0;
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 9996;
 }
 @media (min-width: 1025px) {
-  .l-sidebar {
-    right: 0;
-    left: 100%;
+  .p-sidebar {
     height: 2843px;
     width: 367px;
   }
 }
-.l-sidebar.is-open {
+.p-sidebar.is-open {
   height: 2713px;
-  right: 0;
 }
 @media (min-width: 600px) {
-  .l-sidebar.is-open {
+  .p-sidebar.is-open {
     height: 1828px;
   }
 }
 
-.l-sidebar__title {
+.p-sidebar__title {
   display: none;
 }
 @media (min-width: 1025px) {
-  .l-sidebar__title {
-    position: relative;
-    top: 82px;
-    left: 46px;
+  .p-sidebar__title {
     font-size: 34px;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
@@ -760,39 +682,134 @@ th {
   }
 }
 
-.l-sidebar__btn {
-  position: absolute;
-  right: 7px;
-  top: 25px;
+.p-sidebar__btn {
   height: 32px;
   width: 32px;
   cursor: pointer;
 }
 @media (min-width: 1025px) {
-  .l-sidebar__btn {
+  .p-sidebar__btn {
     display: none;
   }
 }
 
-.l-sidebar__body {
-  position: relative;
-  top: 212px;
-  left: 46px;
-}
-
-.l-sidebar__list {
+.p-sidebar__list {
   font-family: "M+ 1m";
   color: #707070;
 }
 
-.l-sidebar__item {
+.p-sidebar__item {
   padding: 10px;
   font-size: 20px;
 }
 
-.l-sidebar__item:first-child {
+.p-sidebar__item:first-child {
   padding: 30px 0px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.p-search {
+  position: relative;
+  width: 318px;
+  height: 46px;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .p-search {
+    width: 546px;
+    margin: auto;
+  }
+}
+@media (min-width: 1025px) {
+  .p-search {
+    margin: auto 20px;
+  }
+}
+
+.p-search__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 46px;
+  padding: 0 10px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border-color: #707070;
+  border-width: 1px;
+  outline: 0;
+  font-size: 18px;
+}
+@media (min-width: 600px) {
+  .p-search__input {
+    width: 396px;
+  }
+}
+
+.p-search__img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.p-search__btn {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  text-align: center;
+  width: 78px;
+  height: 46px;
+  background: #F2EDE9;
+  border-radius: 10px;
+  border-color: #707070;
+  border-width: 1px;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+}
+@media (min-width: 600px) {
+  .p-search__btn {
+    left: 410px;
+    width: 136px;
+  }
+}
+
+.u-sidebar {
+  position: absolute;
+  top: 0;
+  right: -100%;
+}
+@media (min-width: 1025px) {
+  .u-sidebar {
+    right: 0;
+    left: 100%;
+  }
+}
+.u-sidebar.is-open {
+  right: 0;
+}
+
+@media (min-width: 1025px) {
+  .u-sidebar__title {
+    position: relative;
+    top: 82px;
+    left: 46px;
+  }
+}
+
+.u-sidebar__btn {
+  position: absolute;
+  right: 7px;
+  top: 25px;
+}
+
+.u-sidebar__body {
+  position: relative;
+  top: 212px;
+  left: 46px;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,56 @@
+@use '../../foundation/mixin' as m;
+
+.p-sidebar{ 
+    height: 0;
+    width: 328px;
+    background-color: #F2EDE9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 9996;
+
+    @include m.pc{
+        height  : 2843px;
+        width   : 367px;
+    };
+
+    &.is-open{
+        height: 2713px;
+
+        @include m.tb{
+            height: 1828px;
+        };
+    }
+}
+.p-sidebar__title{
+    display: none;
+
+    @include m.pc{
+        font-size: 34px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        color: #707070;
+        display: block;
+    };
+
+}
+.p-sidebar__btn{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    @include m.pc{
+        display: none;
+    };    
+}
+.p-sidebar__list{
+    font-family: 'M+ 1m';
+    color: #707070;
+}
+.p-sidebar__item{
+        padding: 10px;
+        font-size: 20px;
+}
+.p-sidebar__item:first-child{
+        padding: 30px 0px;
+        font-size: 24px;
+        font-weight: bold;
+}
