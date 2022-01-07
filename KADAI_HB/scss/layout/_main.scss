@@ -1,0 +1,144 @@
+@use '../foundation/mixin' as m;
+
+.l-section__hero{
+    width: 100vw;
+    height: 285px;
+    background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
+
+    @include m.tb{
+        background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
+    };
+    @include m.pc{
+        height: 530px;
+        background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
+        font-size: 40px;
+    };
+}
+.l-main__wrap{
+    width: 100vw;
+    height: 1350px;
+    background-color: white;
+
+    @include m.tb{
+        height: auto;
+        display: flex;
+        justify-content: space-between; //test
+    };
+}
+.l-main--image1{
+    width: auto;
+    height: 642px;
+    margin: 20px;
+    padding: 10px;
+    background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    color: white;
+
+    @include m.tb{
+        height: 681px;
+        margin: 40px 20px 40px 40px;
+        background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
+        font-size: 44px;
+    };
+    @include m.pc{
+        height: 1193px;
+        width: inherit;
+        margin: 120px 40px 135px 110px;
+        background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
+        font-size: 80px;
+    };
+}
+.l-main--image2{
+    @extend .l-main--image1;
+    background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
+
+    @include m.tb{
+        margin: 40px 40px 40px 20px;
+        background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
+    };
+    @include m.pc{
+        margin: 120px 110px 135px 40px;
+        background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
+    };
+}
+.l-menu__description{
+    position: relative;
+    top: 275px;
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    color: #3C2A10;
+
+    @include m.tb{
+        top: 240px;
+        font-size: 24px;
+    };
+    @include m.pc{
+        top: 800px;
+        font-size: 24px;
+    };
+ 
+    > p{
+        font-size: 16px;
+        font-weight: initial;
+        color: #3C2A10;
+        
+    }    
+}
+.l-area__map{
+    width: auto;
+    height: 691px;
+    background-image: url(/images/img_iPhone_front-page/map.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+
+    @include m.tb{
+        height: 415px;
+        background-image: url(/images/img_TB_front-page/TB__map.png);
+    };
+    @include m.pc{
+        height: 649px;
+        background-image: url(/images/img_PC_front-page/PC__map.png);
+    };
+ }
+.l-area__text{
+    height: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    line-height: 2;
+    color: white;
+    
+    @include m.pc{
+        width: 60%;
+        font-size: 36px;
+    };
+    
+    > p{
+        font-size: 14px;
+    }
+}
+
