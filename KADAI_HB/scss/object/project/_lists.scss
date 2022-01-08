@@ -1,30 +1,41 @@
 @use '../../foundation/mixin' as m;
 
-.p-sidebar{ 
-    height: 0;
+.p-sidebar{
+    position: absolute;
+    top: 0;
     width: 328px;
-    background-color: #F2EDE9;
+    background-color: #F2EDE9; 
+    z-index: 9996;
+    
+    // 以下、サイドバーの動作＆アニメーションの設定。
+    right: -100%;
+    height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-    z-index: 9996;
 
     @include m.pc{
+        right: 0;
+        left: 100%;
         height  : 2843px;
         width   : 367px;
     };
 
     &.is-open{
         height: 2713px;
-
+        right: 0;
         @include m.tb{
             height: 1828px;
         };
     }
+
 }
 .p-sidebar__title{
     display: none;
 
     @include m.pc{
+        position: relative;
+        top: 82px;
+        left: 46px;
         font-size: 34px;
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
@@ -34,12 +45,20 @@
 
 }
 .p-sidebar__btn{
+    position: absolute;
+    right: 7px;
+    top: 25px;
     height: 32px;
     width: 32px;
     cursor: pointer;
     @include m.pc{
         display: none;
     };    
+}
+.p-sidebar__body{
+    position: relative;
+    top: 212px;
+    left: 46px;
 }
 .p-sidebar__list{
     font-family: 'M+ 1m';
