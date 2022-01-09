@@ -12,6 +12,9 @@
     @include m.pc{
         margin: auto 20px;
     };
+    @include m.pc-s{
+        width: 390px;   //test
+    };
 
 }
 .p-search__input{	
@@ -29,6 +32,9 @@
     font-size: 18px;
     @include m.tb{
         width: 396px;
+    };
+    @include m.pc-s{
+        width: 280px;   //test
     };
 
 }
@@ -57,5 +63,9 @@
     @include m.tb{
         left: 410px;
         width: 136px;
+    };
+    @include m.pc-s{
+        width: 100px;   //test
+        left: 290px;    //test
     };
 }

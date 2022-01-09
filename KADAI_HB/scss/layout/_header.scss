@@ -9,6 +9,10 @@
     @include m.pc{
         display: flex;
         justify-content: space-between;
+        width: calc(100% - 367px);//test
+    };
+    @include m.pc-s{
+        width: calc(100% - 260px);//test
     };
 }
 .l-header__logo{
@@ -21,6 +25,10 @@
         padding: 20px;
         font-size: 64px;
         text-align: initial;
+    };
+    @include m.pc-s{
+        font-size: 60px;//test
+        margin: auto 10px;
     };
 }
 .l-header__menu{
