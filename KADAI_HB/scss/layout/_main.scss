@@ -1,8 +1,16 @@
 @use '../foundation/mixin' as m;
 
+.l-main{
+    @include m.pc{
+        width: calc(100% - 367px);
+    };
+    @include m.pc-s{
+        width: calc(100% - 270px);
+    };
+}
 .l-section__hero{
     width: 100vw;
-    height: 285px;
+    height: 40vh;   //test
     background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -20,34 +28,25 @@
         background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
     };
     @include m.pc{
-        width: calc(100% - 367px);//test
-        height: 530px;
         background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
         font-size: 40px;
     };
 }
 .l-main__wrap{
-    //width: 100vw; test delete
-    //height: 1350px;   test delete
     background-color: white;
 
     @include m.tb{
         height: auto;
         display: flex;
-        justify-content: space-between; //test
+        justify-content: space-between;
     };
-    @include m.pc{
-        width: calc(100% - 367px);//test
-    };
-    @include m.pc-s{
-        width: calc(100% - 260px);//test
-    };
+
 }
 .l-main__image1{
     position: relative;
     top: 0;
     width: auto;
-    height: 642px;
+    //min-height: 642px; ないほうが綺麗？
     margin: 20px 5%;
     background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
     background-repeat: no-repeat;
@@ -70,13 +69,13 @@
 
     @include m.tb{
         width: 100%;
-        height: 681px;
+        //height: 681px;
         margin: 40px 3%;
         background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
         font-size: 44px;
     };
     @include m.pc{
-        height: 1193px;
+        //height: 1193px;
         margin: 50px 3%;
         background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
         font-size: 80px;
@@ -94,15 +93,16 @@
     };
 }
 .l-menu__wrap1, .l-menu__wrap2{ //test
-    position: absolute;
-    bottom: 0;
-    height: auto;
-    width: 100%;
+    padding-top: 90px;
 
+    @include m.tb{
+        font-size: 120px;
+    };
+    @include m.pc{
+        padding-top: 150px;
+    };
 }
 .l-menu__description{
-    //position: relative;     //test
-    //top: 275px;             //test
     margin: 10px;
     padding: 20px 10px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -112,24 +112,19 @@
     color: #3C2A10;
 
     @include m.tb{
-        //top: 240px;       //test
         font-size: 24px;
     };
     @include m.pc{
-        //top: 800px;       //test
-        font-size: 24px;
+        font-size: 40px;
     };
  
     > p{
         font-size: 16px;
         font-weight: initial;
         color: #3C2A10;
-        
     }    
 }
 .l-area__map{
-    width:100%;
-    height: 691px;
     background-image: url(/images/img_iPhone_front-page/map.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -137,20 +132,13 @@
     background-color: rgba(0,0,0,0.6);
 
     @include m.tb{
-        height: 415px;
         background-image: url(/images/img_TB_front-page/TB__map.png);
     };
     @include m.pc{
-        width: calc(100% - 367px);//test
-        height: 649px;
         background-image: url(/images/img_PC_front-page/PC__map.png);
-    };
-    @include m.pc-s{
-        width: calc(100% - 260px);//test
     };
  }
 .l-area__text{
-    height: 100%;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 30px;

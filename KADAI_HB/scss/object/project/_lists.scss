@@ -13,24 +13,22 @@
     overflow: hidden;
     transition: all 0.3s ease;
 
+    @include m.tb{
+        width   : 367px;
+    };
     @include m.pc{
         right: 0;
-        //left: 100%;   test
-        height  : 2843px;
-        width   : 367px;
+        height: 100%;
         transition: none;
     };
-    @include m.pc-s{    //test
-        width   : 260px;
+    @include m.pc-s{
+        width   : 270px;
     };
 
 
     &.is-open{
-        height: 2713px;
+        height: 100%;
         right: 0;
-        @include m.tb{
-            height: 1798px;
-        };
     }
 
 }

@@ -1,7 +1,6 @@
 @use '../foundation/mixin' as m;
 
 .l-header{
-    position: relative;
     height: 217px;
     background-color: #FFF7EF;
     font-family: 'Roboto', sans-serif;  
@@ -12,7 +11,7 @@
         width: calc(100% - 367px);//test
     };
     @include m.pc-s{
-        width: calc(100% - 260px);//test
+        width: calc(100% - 270px);//test
     };
 }
 .l-header__logo{
@@ -21,14 +20,14 @@
     text-align: center;
     @include m.pc{
         width: 40%;
-        margin: auto 20px;
+        margin: 45px 20px;
         padding: 20px;
         font-size: 64px;
         text-align: initial;
     };
     @include m.pc-s{
-        font-size: 60px;//test
-        margin: auto 10px;
+        font-size: 55px;
+        margin: 50px 10px;
     };
 }
 .l-header__menu{
@@ -51,6 +50,5 @@
 	left: 0;
 	z-index: 9995;
 	background: rgba(0,0,0,.5);
-	//display: block;
 }
 
