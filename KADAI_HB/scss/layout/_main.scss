@@ -10,7 +10,7 @@
 }
 .l-section__hero{
     width: 100vw;
-    height: 40vh;   //test
+    height: 45vh;
     background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -46,7 +46,7 @@
     position: relative;
     top: 0;
     width: auto;
-    //min-height: 642px; ないほうが綺麗？
+    min-height: 643px;  //設定は好みによる？なくても大丈夫。
     margin: 20px 5%;
     background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
     background-repeat: no-repeat;
@@ -69,13 +69,11 @@
 
     @include m.tb{
         width: 100%;
-        //height: 681px;
         margin: 40px 3%;
         background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
         font-size: 44px;
     };
     @include m.pc{
-        //height: 1193px;
         margin: 50px 3%;
         background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
         font-size: 80px;
@@ -92,7 +90,8 @@
         background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
     };
 }
-.l-menu__wrap1, .l-menu__wrap2{ //test
+.l-menu__wrap1, .l-menu__wrap2{
+    width: 100%;
     padding-top: 90px;
 
     @include m.tb{

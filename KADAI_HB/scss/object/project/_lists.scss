@@ -20,6 +20,7 @@
         right: 0;
         height: 100%;
         transition: none;
+        overflow-y: scroll; //サイドバーへの項目がオーバーフローしたときにスクロールバー出現。
     };
     @include m.pc-s{
         width   : 270px;
@@ -27,8 +28,9 @@
 
 
     &.is-open{
-        height: 100%;
         right: 0;
+        height: 100%;
+        overflow-y: scroll; //サイドバーへの項目がオーバーフローしたときにスクロールバー出現。
     }
 
 }

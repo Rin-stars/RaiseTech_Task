@@ -482,7 +482,7 @@ th {
 
 .l-section__hero {
   width: 100vw;
-  height: 40vh;
+  height: 45vh;
   background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -522,6 +522,7 @@ th {
   position: relative;
   top: 0;
   width: auto;
+  min-height: 643px;
   margin: 20px 5%;
   background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
   background-repeat: no-repeat;
@@ -570,6 +571,7 @@ th {
 }
 
 .l-menu__wrap1, .l-menu__wrap2 {
+  width: 100%;
   padding-top: 90px;
 }
 @media (min-width: 600px) {
@@ -688,6 +690,7 @@ th {
     right: 0;
     height: 100%;
     transition: none;
+    overflow-y: scroll;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -696,8 +699,9 @@ th {
   }
 }
 .p-sidebar.is-open {
-  height: 100%;
   right: 0;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .p-sidebar__title {
