@@ -49,17 +49,7 @@
     };
 
 }
-.p-sidebar__btn{
-    position: absolute;
-    right: 7px;
-    top: 25px;
-    height: 32px;
-    width: 32px;
-    cursor: pointer;
-    @include m.pc{
-        display: none;
-    };    
-}
+
 .p-sidebar__body{
     position: relative;
     top: 212px;

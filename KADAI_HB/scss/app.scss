@@ -19,9 +19,10 @@
 // Component
 // -----------------------------------------------------------------
 
-//@use "object/component/button";
-//@use "object/component/dialog";
-//@use "object/component/grid";
+@use "object/component/button";
+@use "object/component/cover";
+@use "object/component/link";
+@use "object/component/string";
 
 // -----------------------------------------------------------------
 // Project
@@ -29,6 +30,7 @@
 
 @use "object/project/lists";
 @use "object/project/search";
+@use "object/project/section";
 
 // -----------------------------------------------------------------
 // Utility
