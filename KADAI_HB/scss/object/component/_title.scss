@@ -1,6 +1,6 @@
 @use '../../foundation/mixin' as m;
 
-.c-logo__large{
+.c-title--logo{
     padding: 40px;
     font-size: 40px; 
     text-align: center;
@@ -16,8 +16,8 @@
         margin: 50px 10px;
     };
 }
-.c-copyright{
+
+.c-title--copyright{
     padding-top: 34px;
     font-size: 14px;
 }
-

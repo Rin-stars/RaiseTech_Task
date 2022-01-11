@@ -14,6 +14,40 @@
         width: calc(100% - 270px);//test
     };
 }
+.p-sidebar{
+    position: absolute;
+    top: 0;
+    width: 328px;
+    background-color: #F2EDE9; 
+    z-index: 9996;
+    
+    // 以下、サイドバーの動作＆アニメーションの設定。
+    right: -100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    @include m.tb{
+        width   : 367px;
+    };
+    @include m.pc{
+        right: 0;
+        height: 100%;
+        transition: none;
+        overflow-y: scroll; //サイドバーへの項目がオーバーフローしたときにスクロールバー出現。
+    };
+    @include m.pc-s{
+        width   : 270px;
+    };
+
+
+    &.is-open{
+        right: 0;
+        height: 100%;
+        overflow-y: scroll; //サイドバーへの項目がオーバーフローしたときにスクロールバー出現。
+    }
+
+}
 .p-footer{
     text-align: center;
     height: 150px;

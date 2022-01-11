@@ -22,13 +22,12 @@
 @use "object/component/button";
 @use "object/component/cover";
 @use "object/component/link";
-@use "object/component/string";
+@use "object/component/title";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-
-@use "object/project/lists";
+@use "object/project/navigation";
 @use "object/project/search";
 @use "object/project/section";
 

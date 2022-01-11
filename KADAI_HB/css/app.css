@@ -580,24 +580,24 @@ th {
   font-size: 14px;
 }
 
-.c-button--open {
+.c-nav__btn--open {
   position: absolute;
   top: 14px;
   right: 10px;
   font-size: 20px;
 }
 @media (min-width: 600px) {
-  .c-button--open {
+  .c-nav__btn--open {
     font-size: 34px;
   }
 }
 @media (min-width: 1025px) {
-  .c-button--open {
+  .c-nav__btn--open {
     display: none;
   }
 }
 
-.c-button--close {
+.c-nav__btn--close {
   position: absolute;
   right: 7px;
   top: 25px;
@@ -606,12 +606,41 @@ th {
   cursor: pointer;
 }
 @media (min-width: 1025px) {
-  .c-button--close {
+  .c-nav__btn--close {
     display: none;
   }
 }
 
-.c-body__cover {
+.c-search__btn {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  text-align: center;
+  width: 78px;
+  height: 46px;
+  background: #F2EDE9;
+  border-radius: 10px;
+  border-color: #707070;
+  border-width: 1px;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+}
+@media (min-width: 600px) {
+  .c-search__btn {
+    left: 410px;
+    width: 136px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .c-search__btn {
+    width: 100px;
+    left: 290px;
+  }
+}
+
+.c-cover {
   position: fixed;
   height: 0;
   width: 100%;
@@ -621,17 +650,17 @@ th {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.c-link {
+.c-link--footer {
   font-size: 20px;
 }
 
-.c-logo__large {
+.c-title--logo {
   padding: 40px;
   font-size: 40px;
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .c-logo__large {
+  .c-title--logo {
     width: 40%;
     margin: 45px 20px;
     padding: 20px;
@@ -640,57 +669,22 @@ th {
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .c-logo__large {
+  .c-title--logo {
     font-size: 55px;
     margin: 50px 10px;
   }
 }
 
-.c-copyright {
+.c-title--copyright {
   padding-top: 34px;
   font-size: 14px;
 }
 
-.p-sidebar {
-  position: absolute;
-  top: 0;
-  width: 328px;
-  background-color: #F2EDE9;
-  z-index: 9996;
-  right: -100%;
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-@media (min-width: 600px) {
-  .p-sidebar {
-    width: 367px;
-  }
-}
-@media (min-width: 1025px) {
-  .p-sidebar {
-    right: 0;
-    height: 100%;
-    transition: none;
-    overflow-y: scroll;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .p-sidebar {
-    width: 270px;
-  }
-}
-.p-sidebar.is-open {
-  right: 0;
-  height: 100%;
-  overflow-y: scroll;
-}
-
-.p-sidebar__title {
+.p-title--nav {
   display: none;
 }
 @media (min-width: 1025px) {
-  .p-sidebar__title {
+  .p-title--nav {
     position: relative;
     top: 82px;
     left: 46px;
@@ -702,23 +696,23 @@ th {
   }
 }
 
-.p-sidebar__body {
+.p-nav {
   position: relative;
   top: 212px;
   left: 46px;
 }
 
-.p-sidebar__list {
+.p-nav__category {
   font-family: "M+ 1m";
   color: #707070;
 }
 
-.p-sidebar__item {
+.p-nav__item {
   padding: 10px;
   font-size: 20px;
 }
 
-.p-sidebar__item:first-child {
+.p-nav__item:first-child {
   padding: 30px 0px;
   font-size: 24px;
   font-weight: bold;
@@ -780,35 +774,6 @@ th {
   height: 24px;
 }
 
-.p-search__btn {
-  position: absolute;
-  top: 0;
-  left: 240px;
-  text-align: center;
-  width: 78px;
-  height: 46px;
-  background: #F2EDE9;
-  border-radius: 10px;
-  border-color: #707070;
-  border-width: 1px;
-  color: #707070;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "M+ 1m";
-}
-@media (min-width: 600px) {
-  .p-search__btn {
-    left: 410px;
-    width: 136px;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .p-search__btn {
-    width: 100px;
-    left: 290px;
-  }
-}
-
 .p-header {
   height: 217px;
   background-color: #FFF7EF;
@@ -826,6 +791,41 @@ th {
   .p-header {
     width: calc(100% - 270px);
   }
+}
+
+.p-sidebar {
+  position: absolute;
+  top: 0;
+  width: 328px;
+  background-color: #F2EDE9;
+  z-index: 9996;
+  right: -100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+@media (min-width: 600px) {
+  .p-sidebar {
+    width: 367px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-sidebar {
+    right: 0;
+    height: 100%;
+    transition: none;
+    overflow-y: scroll;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .p-sidebar {
+    width: 270px;
+  }
+}
+.p-sidebar.is-open {
+  right: 0;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .p-footer {

@@ -1,6 +1,6 @@
 @use '../../foundation/mixin' as m;
 
-.c-button--open{
+.c-nav__btn--open{
     position: absolute;
     top: 14px;
     right: 10px;  
@@ -12,7 +12,7 @@
         display: none;
     };
 }
-.c-button--close{
+.c-nav__btn--close{
     position: absolute;
     right: 7px;
     top: 25px;
@@ -22,4 +22,28 @@
     @include m.pc{
         display: none;
     };    
+}
+.c-search__btn{
+    position:absolute; 
+    top:0;
+    left: 240px;
+    text-align: center;    
+    width:78px;
+    height:46px;
+    background:#F2EDE9;
+    border-radius:10px;
+    border-color: #707070;
+    border-width: 1px;
+    color:#707070;
+    font-size:16px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    @include m.tb{
+        left: 410px;
+        width: 136px;
+    };
+    @include m.pc-s{
+        width: 100px;   //test
+        left: 290px;    //test
+    };
 }

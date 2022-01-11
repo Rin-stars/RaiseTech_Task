@@ -1,6 +1,6 @@
 @use '../../foundation/mixin' as m;
 
-.c-body__cover{
+.c-cover{
     position: fixed;
     height: 0;  //デフォルトは0で背景色なし。
 	width: 100%;
