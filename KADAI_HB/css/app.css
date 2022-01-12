@@ -567,20 +567,17 @@ th {
 }
 
 .p-front__wrap {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 600px) {
   .p-front__wrap {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
 .p-front__image--left, .p-front__image--right {
   position: relative;
-  top: 0;
-  width: auto;
   min-height: 643px;
   margin: 20px 5%;
   background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
@@ -591,8 +588,7 @@ th {
   font-size: 41px;
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 .p-front__image--left > h3, .p-front__image--right > h3 {
   position: absolute;
@@ -631,16 +627,17 @@ th {
 
 .p-front__inner {
   width: 100%;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 @media (min-width: 600px) {
   .p-front__inner {
     font-size: 120px;
+    padding-top: 90px;
   }
 }
 @media (min-width: 1025px) {
   .p-front__inner {
-    padding-top: 150px;
+    padding-top: 120px;
   }
 }
 
@@ -736,7 +733,7 @@ th {
   top: 0;
   width: 230px;
   height: 46px;
-  padding: 0 10px;
+  padding: 0 10px 0 40px;
   background: #FFFFFF;
   border-radius: 10px;
   border-color: #707070;

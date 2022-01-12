@@ -1,19 +1,15 @@
 @use '../../foundation/mixin' as m;
 
 .p-front__wrap{
-    background-color: white;
-
+    display: flex;
+    flex-direction:column;
     @include m.tb{
-        height: auto;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
     };
 
 }
 .p-front__image--left{
     position: relative;
-    top: 0;
-    width: auto;
     min-height: 643px;  //設定は好みによる？なくても大丈夫。
     margin: 20px 5%;
     background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
@@ -26,8 +22,7 @@
     color: white;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 
     > h3{
         position: absolute;
@@ -60,13 +55,14 @@
 }
 .p-front__inner{
     width: 100%;
-    padding-top: 90px;
+    padding-top: 60px;
 
     @include m.tb{
         font-size: 120px;
+        padding-top: 90px;
     };
     @include m.pc{
-        padding-top: 150px;
+        padding-top: 120px;
     };
 }
 .p-front__description{
