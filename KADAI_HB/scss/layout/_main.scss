@@ -1,38 +1,8 @@
 @use '../foundation/mixin' as m;
 
-.l-main{
-    @include m.pc{
-        width: calc(100% - 367px);
-    };
-    @include m.pc-s{
-        width: calc(100% - 270px);
-    };
-}
-.l-section__hero{
-    width: 100vw;
-    height: 45vh;
-    background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
 
-    font-size: 36px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
-    color: white;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 25px;
 
-    @include m.tb{
-        background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
-    };
-    @include m.pc{
-        background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
-        font-size: 40px;
-    };
-}
-.l-main__wrap{
+.p-front__wrap{
     background-color: white;
 
     @include m.tb{
@@ -42,7 +12,7 @@
     };
 
 }
-.l-main__image1{
+.p-front__image--left{
     position: relative;
     top: 0;
     width: auto;
@@ -79,8 +49,8 @@
         font-size: 80px;
     };
 }
-.l-main__image2{
-    @extend .l-main__image1;
+.p-front__image--right{
+    @extend .p-front__image--left;
     background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
 
     @include m.tb{
@@ -90,7 +60,7 @@
         background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
     };
 }
-.l-menu__wrap1, .l-menu__wrap2{
+.p-front__inner{
     width: 100%;
     padding-top: 90px;
 
@@ -101,7 +71,7 @@
         padding-top: 150px;
     };
 }
-.l-menu__description{
+.p-front__description{
     margin: 10px;
     padding: 20px 10px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -123,7 +93,7 @@
         color: #3C2A10;
     }    
 }
-.l-area__map{
+.p-map__image{
     background-image: url(/images/img_iPhone_front-page/map.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -137,7 +107,7 @@
         background-image: url(/images/img_PC_front-page/PC__map.png);
     };
  }
-.l-area__text{
+.p-map__text{
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 30px;

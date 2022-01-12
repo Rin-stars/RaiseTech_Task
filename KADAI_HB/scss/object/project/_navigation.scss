@@ -1,6 +1,6 @@
 @use '../../foundation/mixin' as m;
 
-.p-title--nav{
+.p-nav__title{
     display: none;
 
     @include m.pc{

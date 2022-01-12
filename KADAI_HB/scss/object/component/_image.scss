@@ -1,0 +1,26 @@
+@use '../../foundation/mixin' as m;
+
+.c-top__image--small{
+    width: 100vw;
+    height: 45vh;
+    background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
+
+    @include m.tb{
+        background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
+        font-size: 40px;
+    };
+}
