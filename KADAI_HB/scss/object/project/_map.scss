@@ -1,0 +1,35 @@
+@use '../../foundation/mixin' as m;
+
+.p-map__image{
+    background-image: url(/images/img_iPhone_front-page/map.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+
+    @include m.tb{
+        background-image: url(/images/img_TB_front-page/TB__map.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_PC_front-page/PC__map.png);
+    };
+ }
+.p-map__text{
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    line-height: 2;
+    color: white;
+    
+    @include m.pc{
+        width: 60%;
+        font-size: 36px;
+    };
+    
+    > p{
+        font-size: 14px;
+    }
+}
+

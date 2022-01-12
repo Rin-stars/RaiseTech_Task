@@ -1,10 +1,12 @@
 $(function(){ 
 
+  // ヘッダーのMenuボタンクリック時にサイドバーを開く。
   $('.c-nav__btn--open').click(function() {
     $('.p-sidebar').toggleClass('is-open');
     $('.c-cover').css( 'height' , '100%' );
   });
 
+  // サイドバーの×ボタンクリック時にサイドバーを閉じる。
   $('.c-nav__btn--close').click(function() {
     $('.p-sidebar').toggleClass('is-open');
     $('.c-cover').css( 'height' , '0' );

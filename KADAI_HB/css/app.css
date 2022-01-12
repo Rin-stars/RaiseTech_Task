@@ -402,146 +402,6 @@ th {
   position: relative;
 }
 
-.p-front__wrap {
-  background-color: white;
-}
-@media (min-width: 600px) {
-  .p-front__wrap {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.p-front__image--left, .p-front__image--right {
-  position: relative;
-  top: 0;
-  width: auto;
-  min-height: 643px;
-  margin: 20px 5%;
-  background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 41px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.p-front__image--left > h3, .p-front__image--right > h3 {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
-@media (min-width: 600px) {
-  .p-front__image--left, .p-front__image--right {
-    width: 100%;
-    margin: 40px 3%;
-    background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
-    font-size: 44px;
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__image--left, .p-front__image--right {
-    margin: 50px 3%;
-    background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
-    font-size: 80px;
-  }
-}
-
-.p-front__image--right {
-  background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
-}
-@media (min-width: 600px) {
-  .p-front__image--right {
-    background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__image--right {
-    background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
-  }
-}
-
-.p-front__inner {
-  width: 100%;
-  padding-top: 90px;
-}
-@media (min-width: 600px) {
-  .p-front__inner {
-    font-size: 120px;
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__inner {
-    padding-top: 150px;
-  }
-}
-
-.p-front__description {
-  margin: 10px;
-  padding: 20px 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 22px;
-  font-weight: bold;
-  font-family: "M+ 1m";
-  color: #3C2A10;
-}
-@media (min-width: 600px) {
-  .p-front__description {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__description {
-    font-size: 40px;
-  }
-}
-.p-front__description > p {
-  font-size: 16px;
-  font-weight: initial;
-  color: #3C2A10;
-}
-
-.p-map__image {
-  background-image: url(/images/img_iPhone_front-page/map.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-@media (min-width: 600px) {
-  .p-map__image {
-    background-image: url(/images/img_TB_front-page/TB__map.png);
-  }
-}
-@media (min-width: 1025px) {
-  .p-map__image {
-    background-image: url(/images/img_PC_front-page/PC__map.png);
-  }
-}
-
-.p-map__text {
-  padding: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "M+ 1m";
-  line-height: 2;
-  color: white;
-}
-@media (min-width: 1025px) {
-  .p-map__text {
-    width: 60%;
-    font-size: 36px;
-  }
-}
-.p-map__text > p {
-  font-size: 14px;
-}
-
 .c-nav__btn--open {
   position: absolute;
   top: 14px;
@@ -667,6 +527,146 @@ th {
 .c-title--copyright {
   padding-top: 34px;
   font-size: 14px;
+}
+
+.p-map__image {
+  background-image: url(/images/img_iPhone_front-page/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 600px) {
+  .p-map__image {
+    background-image: url(/images/img_TB_front-page/TB__map.png);
+  }
+}
+@media (min-width: 1025px) {
+  .p-map__image {
+    background-image: url(/images/img_PC_front-page/PC__map.png);
+  }
+}
+
+.p-map__text {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  line-height: 2;
+  color: white;
+}
+@media (min-width: 1025px) {
+  .p-map__text {
+    width: 60%;
+    font-size: 36px;
+  }
+}
+.p-map__text > p {
+  font-size: 14px;
+}
+
+.p-front__wrap {
+  background-color: white;
+}
+@media (min-width: 600px) {
+  .p-front__wrap {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-front__image--left, .p-front__image--right {
+  position: relative;
+  top: 0;
+  width: auto;
+  min-height: 643px;
+  margin: 20px 5%;
+  background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 41px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p-front__image--left > h3, .p-front__image--right > h3 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+@media (min-width: 600px) {
+  .p-front__image--left, .p-front__image--right {
+    width: 100%;
+    margin: 40px 3%;
+    background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
+    font-size: 44px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-front__image--left, .p-front__image--right {
+    margin: 50px 3%;
+    background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
+    font-size: 80px;
+  }
+}
+
+.p-front__image--right {
+  background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
+}
+@media (min-width: 600px) {
+  .p-front__image--right {
+    background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
+  }
+}
+@media (min-width: 1025px) {
+  .p-front__image--right {
+    background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
+  }
+}
+
+.p-front__inner {
+  width: 100%;
+  padding-top: 90px;
+}
+@media (min-width: 600px) {
+  .p-front__inner {
+    font-size: 120px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-front__inner {
+    padding-top: 150px;
+  }
+}
+
+.p-front__description {
+  margin: 10px;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+}
+@media (min-width: 600px) {
+  .p-front__description {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-front__description {
+    font-size: 40px;
+  }
+}
+.p-front__description > p {
+  font-size: 16px;
+  font-weight: initial;
+  color: #3C2A10;
 }
 
 .p-nav__title {
