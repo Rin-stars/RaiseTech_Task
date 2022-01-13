@@ -1,0 +1,25 @@
+@use '../../foundation/mixin' as m;
+
+.c-article__container, .c-card__container{
+    display: flex;
+    flex-direction:column;
+    @include m.tb{
+        flex-direction: row;
+    };
+
+}
+
+.c-card__container{ //test
+    margin: 10px;
+}
+.c-card-title__container{//test
+    width: 100%;
+    height: 100%;
+    padding: 30px 5%;
+    background-color: #3C2B1C;
+}
+
+.c-top-title__container{
+    padding: 30px 5%;
+}
+

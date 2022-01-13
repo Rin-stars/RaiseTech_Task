@@ -1,6 +1,6 @@
 @use '../../foundation/mixin' as m;
 
-.c-text__logo{
+.c-logo__text{
     padding: 40px;
     font-size: 40px; 
     text-align: center;
@@ -12,40 +12,74 @@
         text-align: initial;
     };
     @include m.pc-s{
-        font-size: 55px;
         margin: 50px 10px;
+        font-size: 55px;
     };
 }
 
+.c-footer__text{
+    font-size: 14px;
+    padding-top: 34px;
+}
+
+
+/**********************/
+/* font-family: 'M+ 1m'
+/**********************/
 .c-text--M1m-36-bold{
     font-size: 36px;
     font-weight: bold;
     font-family: 'M+ 1m';
+}
+.c-text--M1m-28-bold{
+    padding-bottom: 30px;
+    font-family: 'M+ 1m';
+    font-weight: bold;
+    font-size: 28px; 
+}
+.c-text--M1m-23-bold{
+    padding-bottom: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+
+    @include m.tb{
+        font-size: 30px;
+    };
+    @include m.pc{
+        font-size: 40px;
+    };
+}
+.c-text--M1m-20-lh29-bold{
+    padding-bottom: 25px;
+    line-height: 29px;
+    font-family: 'M+ 1m';
+    font-weight: bold;
+    font-size: 20px; 
 }
 .c-text--M1m-16-bold{
     font-size: 16px;
     font-weight: bold;
     font-family: 'M+ 1m';
 }
-.c-text--Roboto-36{
-    padding-bottom: 5px;
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
-}
-.c-text--M1m-28-bold{
-    padding: 30px 5%;
-    font-family: 'M+ 1m';
-    font-weight: bold;
-    font-size: 28px; 
-}
-.c-text--M1m-16{
-    padding: 0 5% 20px 5%;
+.c-text--M1m-16-lh23{
     line-height: 23px;
     font-family: 'M+ 1m';
     font-size: 16px; 
 }
+.c-text--M1m-16-lh23-bold{
+    padding-bottom: 10px;
+    line-height: 23px;
+    font-family: 'M+ 1m';
+    font-weight: bold;
+    font-size: 16px; 
+}
 
-.c-text__copyright{
-    padding-top: 34px;
-    font-size: 14px;
+/**********************/
+/* font-family: 'Roboto'
+/**********************/
+.c-text--Roboto-36{
+    padding-bottom: 5px;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
 }

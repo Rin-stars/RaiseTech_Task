@@ -4,14 +4,6 @@
 /*フロントページのスタイリング
 /**************************************/
 
-.p-front__wrap{
-    display: flex;
-    flex-direction:column;
-    @include m.tb{
-        flex-direction: row;
-    };
-
-}
 .p-front__image--left{
     position: relative;
     min-height: 643px;  //設定は好みによる？なくても大丈夫。
@@ -72,24 +64,7 @@
 .p-front__description{
     margin: 10px;
     padding: 20px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
-    color: #3C2A10;
-
-    @include m.tb{
-        font-size: 24px;
-    };
-    @include m.pc{
-        font-size: 40px;
-    };
- 
-    > p{
-        font-size: 16px;
-        font-weight: initial;
-        color: #3C2A10;
-    }    
+    background-color: rgba(255, 255, 255, 0.8);  
 }
 
 
@@ -97,3 +72,5 @@
 /**************************************/
 /*アーカイブページのスタイリング
 /**************************************/
+
+
