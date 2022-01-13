@@ -1,0 +1,51 @@
+@use '../../foundation/mixin' as m;
+
+.c-text__logo{
+    padding: 40px;
+    font-size: 40px; 
+    text-align: center;
+    @include m.pc{
+        width: 40%;
+        margin: 45px 20px;
+        padding: 20px;
+        font-size: 64px;
+        text-align: initial;
+    };
+    @include m.pc-s{
+        font-size: 55px;
+        margin: 50px 10px;
+    };
+}
+
+.c-text--M1m-36-bold{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+}
+.c-text--M1m-16-bold{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+}
+.c-text--Roboto-36{
+    padding-bottom: 5px;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+}
+.c-text--M1m-28-bold{
+    padding: 30px 5%;
+    font-family: 'M+ 1m';
+    font-weight: bold;
+    font-size: 28px; 
+}
+.c-text--M1m-16{
+    padding: 0 5% 20px 5%;
+    line-height: 23px;
+    font-family: 'M+ 1m';
+    font-size: 16px; 
+}
+
+.c-text__copyright{
+    padding-top: 34px;
+    font-size: 14px;
+}

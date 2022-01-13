@@ -22,6 +22,14 @@
         width: calc(100% - 270px);
     };
 }
+.p-archive{
+    @include m.pc{
+        width: calc(100% - 367px);
+    };
+    @include m.pc-s{
+        width: calc(100% - 270px);
+    };
+}
 .p-sidebar{
     position: absolute;
     top: 0;

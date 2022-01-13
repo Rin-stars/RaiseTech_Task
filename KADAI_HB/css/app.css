@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -462,6 +463,14 @@ th {
   }
 }
 
+.c-color--white {
+  color: white;
+}
+
+.c-color--darkbrown {
+  color: #3C2A10;
+}
+
 .c-cover {
   position: fixed;
   height: 0;
@@ -479,13 +488,9 @@ th {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: 36px;
-  font-weight: bold;
-  font-family: "M+ 1m";
-  color: white;
   display: table-cell;
   vertical-align: middle;
-  padding-left: 25px;
+  padding-left: 5%;
 }
 @media (min-width: 600px) {
   .c-top__image--small {
@@ -499,17 +504,17 @@ th {
   }
 }
 
-.c-link--footer {
+.c-link__footer {
   font-size: 20px;
 }
 
-.c-title--logo {
+.c-text__logo {
   padding: 40px;
   font-size: 40px;
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .c-title--logo {
+  .c-text__logo {
     width: 40%;
     margin: 45px 20px;
     padding: 20px;
@@ -518,13 +523,45 @@ th {
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .c-title--logo {
+  .c-text__logo {
     font-size: 55px;
     margin: 50px 10px;
   }
 }
 
-.c-title--copyright {
+.c-text--M1m-36-bold {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+}
+
+.c-text--M1m-16-bold {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+}
+
+.c-text--Roboto-36 {
+  padding-bottom: 5px;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+}
+
+.c-text--M1m-28-bold {
+  padding: 30px 5%;
+  font-family: "M+ 1m";
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.c-text--M1m-16 {
+  padding: 0 5% 20px 5%;
+  line-height: 23px;
+  font-family: "M+ 1m";
+  font-size: 16px;
+}
+
+.c-text__copyright {
   padding-top: 34px;
   font-size: 14px;
 }
@@ -566,6 +603,9 @@ th {
   font-size: 14px;
 }
 
+/**************************************/
+/*フロントページのスタイリング
+/**************************************/
 .p-front__wrap {
   display: flex;
   flex-direction: column;
@@ -666,6 +706,9 @@ th {
   color: #3C2A10;
 }
 
+/**************************************/
+/*アーカイブページのスタイリング
+/**************************************/
 .p-nav__title {
   display: none;
 }
@@ -786,6 +829,17 @@ th {
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .p-front {
+    width: calc(100% - 270px);
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-archive {
+    width: calc(100% - 367px);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .p-archive {
     width: calc(100% - 270px);
   }
 }
