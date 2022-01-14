@@ -23,6 +23,7 @@
 }
 
 
+
 /**********************/
 /* font-family: 'M+ 1m'
 /**********************/
@@ -30,6 +31,20 @@
     font-size: 36px;
     font-weight: bold;
     font-family: 'M+ 1m';
+    @include m.pc{
+        font-size: 45px;
+    };
+}
+.c-text--M1m-30-bold{
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+
+    @include m.pc{
+        padding-bottom: 40px;
+        font-size: 36px;
+    };
 }
 .c-text--M1m-28-bold{
     padding-bottom: 30px;
@@ -58,6 +73,7 @@
     font-size: 20px; 
 }
 .c-text--M1m-16-bold{
+    padding: 10px 0 0 0;
     font-size: 16px;
     font-weight: bold;
     font-family: 'M+ 1m';
@@ -74,12 +90,25 @@
     font-weight: bold;
     font-size: 16px; 
 }
+.c-text--M1m-14-lh33-bold{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    line-height: 33px;
+    @include m.pc{
+        font-size: 16px;
+    };
+}
+
 
 /**********************/
 /* font-family: 'Roboto'
 /**********************/
 .c-text--Roboto-36{
-    padding-bottom: 5px;
     font-size: 36px;
     font-family: 'Roboto', sans-serif;
 }
+
+/**********************/
+/* Others
+/**********************/

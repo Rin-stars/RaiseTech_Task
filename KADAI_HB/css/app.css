@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -482,18 +481,48 @@ th {
 }
 
 .c-card__container {
-  margin: 10px;
+  margin: 0 5% 5% 5%;
 }
 
 .c-card-title__container {
-  width: 100%;
-  height: 100%;
   padding: 30px 5%;
   background-color: #3C2B1C;
 }
 
 .c-top-title__container {
   padding: 30px 5%;
+}
+
+.c-front-inner__container {
+  width: 100%;
+  padding-top: 60px;
+}
+@media (min-width: 600px) {
+  .c-front-inner__container {
+    font-size: 120px;
+    padding-top: 90px;
+  }
+}
+@media (min-width: 1025px) {
+  .c-front-inner__container {
+    padding-top: 120px;
+  }
+}
+
+.c-front-items__container {
+  margin: 10px;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.c-map-text__container {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 1025px) {
+  .c-map-text__container {
+    width: 60%;
+  }
 }
 
 .c-cover {
@@ -509,7 +538,6 @@ th {
 .c-top__image--small {
   width: 100vw;
   height: 45vh;
-  background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -517,21 +545,122 @@ th {
   vertical-align: middle;
   padding-left: 5%;
 }
+
+.c-front-top__image {
+  background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
+}
 @media (min-width: 600px) {
-  .c-top__image--small {
+  .c-front-top__image {
     background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
   }
 }
 @media (min-width: 1025px) {
-  .c-top__image--small {
+  .c-front-top__image {
     background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
-    font-size: 40px;
+  }
+}
+
+.c-archive-top__image {
+  max-height: 283px;
+  background-color: black;
+  background-position: left;
+  background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
+}
+@media (min-width: 1025px) {
+  .c-archive-top__image {
+    max-height: 239px;
+    background-position: center;
+    background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
   }
 }
 
 .c-top__image--medium {
   width: 100vw;
   height: 35vh;
+}
+
+.c-front__image--left, .c-front__image--right {
+  position: relative;
+  min-height: 643px;
+  margin: 20px 5%;
+  background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 41px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+.c-front__image--left > h3, .c-front__image--right > h3 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+@media (min-width: 600px) {
+  .c-front__image--left, .c-front__image--right {
+    width: 100%;
+    margin: 40px 3%;
+    background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
+    font-size: 44px;
+  }
+}
+@media (min-width: 1025px) {
+  .c-front__image--left, .c-front__image--right {
+    margin: 50px 3%;
+    background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
+    font-size: 80px;
+  }
+}
+
+.c-front__image--right {
+  background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
+}
+@media (min-width: 600px) {
+  .c-front__image--right {
+    background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
+  }
+}
+@media (min-width: 1025px) {
+  .c-front__image--right {
+    background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
+  }
+}
+
+.c-map__image {
+  background-image: url(/images/img_iPhone_front-page/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 600px) {
+  .c-map__image {
+    background-image: url(/images/img_TB_front-page/TB__map.png);
+  }
+}
+@media (min-width: 1025px) {
+  .c-map__image {
+    background-image: url(/images/img_PC_front-page/PC__map.png);
+  }
+}
+
+.c-card__image {
+  background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 600px) {
+  .c-card__image {
+    background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
+  }
+}
+@media (min-width: 1025px) {
+  .c-card__image {
+    background-image: url(/images/img_PC_archive-page/PC_archive_index_card.png);
+  }
 }
 
 .c-link__footer {
@@ -572,6 +701,24 @@ th {
   font-weight: bold;
   font-family: "M+ 1m";
 }
+@media (min-width: 1025px) {
+  .c-text--M1m-36-bold {
+    font-size: 45px;
+  }
+}
+
+.c-text--M1m-30-bold {
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+}
+@media (min-width: 1025px) {
+  .c-text--M1m-30-bold {
+    padding-bottom: 40px;
+    font-size: 36px;
+  }
+}
 
 .c-text--M1m-28-bold {
   padding-bottom: 30px;
@@ -606,6 +753,7 @@ th {
 }
 
 .c-text--M1m-16-bold {
+  padding: 10px 0 0 0;
   font-size: 16px;
   font-weight: bold;
   font-family: "M+ 1m";
@@ -625,129 +773,29 @@ th {
   font-size: 16px;
 }
 
+.c-text--M1m-14-lh33-bold {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  line-height: 33px;
+}
+@media (min-width: 1025px) {
+  .c-text--M1m-14-lh33-bold {
+    font-size: 16px;
+  }
+}
+
 /**********************/
 /* font-family: 'Roboto'
 /**********************/
 .c-text--Roboto-36 {
-  padding-bottom: 5px;
   font-size: 36px;
   font-family: "Roboto", sans-serif;
 }
 
-.p-map__image {
-  background-image: url(/images/img_iPhone_front-page/map.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-@media (min-width: 600px) {
-  .p-map__image {
-    background-image: url(/images/img_TB_front-page/TB__map.png);
-  }
-}
-@media (min-width: 1025px) {
-  .p-map__image {
-    background-image: url(/images/img_PC_front-page/PC__map.png);
-  }
-}
-
-.p-map__text {
-  padding: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "M+ 1m";
-  line-height: 2;
-  color: white;
-}
-@media (min-width: 1025px) {
-  .p-map__text {
-    width: 60%;
-    font-size: 36px;
-  }
-}
-.p-map__text > p {
-  font-size: 14px;
-}
-
-/**************************************/
-/*フロントページのスタイリング
-/**************************************/
-.p-front__image--left, .p-front__image--right {
-  position: relative;
-  min-height: 643px;
-  margin: 20px 5%;
-  background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 41px;
-  color: white;
-  display: flex;
-  align-items: flex-end;
-}
-.p-front__image--left > h3, .p-front__image--right > h3 {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
-@media (min-width: 600px) {
-  .p-front__image--left, .p-front__image--right {
-    width: 100%;
-    margin: 40px 3%;
-    background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
-    font-size: 44px;
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__image--left, .p-front__image--right {
-    margin: 50px 3%;
-    background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
-    font-size: 80px;
-  }
-}
-
-.p-front__image--right {
-  background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
-}
-@media (min-width: 600px) {
-  .p-front__image--right {
-    background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__image--right {
-    background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
-  }
-}
-
-.p-front__inner {
-  width: 100%;
-  padding-top: 60px;
-}
-@media (min-width: 600px) {
-  .p-front__inner {
-    font-size: 120px;
-    padding-top: 90px;
-  }
-}
-@media (min-width: 1025px) {
-  .p-front__inner {
-    padding-top: 120px;
-  }
-}
-
-.p-front__description {
-  margin: 10px;
-  padding: 20px 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-/**************************************/
-/*アーカイブページのスタイリング
-/**************************************/
+/**********************/
+/* Others
+/**********************/
 .p-nav__title {
   display: none;
 }

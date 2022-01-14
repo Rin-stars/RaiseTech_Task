@@ -8,18 +8,37 @@
     };
 
 }
-
-.c-card__container{ //test
-    margin: 10px;
+.c-card__container{
+    margin: 0 5% 5% 5%;
 }
-.c-card-title__container{//test
-    width: 100%;
-    height: 100%;
+.c-card-title__container{
     padding: 30px 5%;
     background-color: #3C2B1C;
 }
-
 .c-top-title__container{
     padding: 30px 5%;
 }
+.c-front-inner__container{
+    width: 100%;
+    padding-top: 60px;
 
+    @include m.tb{
+        font-size: 120px;
+        padding-top: 90px;
+    };
+    @include m.pc{
+        padding-top: 120px;
+    };
+}
+.c-front-items__container{
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.8);  
+}
+.c-map-text__container{
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    @include m.pc{
+        width: 60%;
+    };
+}

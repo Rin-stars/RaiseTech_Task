@@ -3,24 +3,107 @@
 .c-top__image--small{
     width: 100vw;
     height: 45vh;
-    background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-
     display: table-cell;
     vertical-align: middle;
     padding-left: 5%;
-
+}
+.c-front-top__image{
+    background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
     @include m.tb{
         background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
     };
     @include m.pc{
         background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
-        font-size: 40px;
+    };
+}
+.c-archive-top__image{
+    max-height: 283px;
+    background-color: black;
+    background-position: left;
+    background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
+
+    @include m.pc{
+        max-height: 239px;
+        background-position: center;
+        background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
     };
 }
 .c-top__image--medium{
     width: 100vw;
     height: 35vh;
+}
+.c-front__image--left{
+    position: relative;
+    min-height: 643px;  //設定は好みによる？なくても大丈夫。
+    margin: 20px 5%;
+    background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    color: white;
+
+    display: flex;
+    align-items: flex-end;
+
+    > h3{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    @include m.tb{
+        width: 100%;
+        margin: 40px 3%;
+        background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
+        font-size: 44px;
+    };
+    @include m.pc{
+        margin: 50px 3%;
+        background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
+        font-size: 80px;
+    };
+}
+.c-front__image--right{
+    @extend .c-front__image--left;
+    background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
+
+    @include m.tb{
+        background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
+    };
+}
+.c-map__image{
+    background-image: url(/images/img_iPhone_front-page/map.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+
+    @include m.tb{
+        background-image: url(/images/img_TB_front-page/TB__map.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_PC_front-page/PC__map.png);
+    };
+ }
+.c-card__image{
+    background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    @include m.tb{
+        background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_PC_archive-page/PC_archive_index_card.png);
+    };  
+
 }
