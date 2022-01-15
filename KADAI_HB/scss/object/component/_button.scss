@@ -44,7 +44,22 @@
         width: 136px;
     };
     @include m.pc-s{
-        width: 100px;   //test
-        left: 290px;    //test
+        width: 100px;
+        left: 290px;
+    };
+}
+.c-read-more__btn{   
+    width:163px;
+    height:42px;
+    background:#F2EDE9;
+    border-radius:30px;
+    border-color: white;
+    color:#707070;
+    font-size:16px;
+    font-weight: bold;
+    font-family: 'M+ 1m';
+    @include m.pc{
+        height: 76px;
+        width: 292px;
     };
 }

@@ -1,22 +1,35 @@
 @use '../../foundation/mixin' as m;
 
-.c-article__container, .c-card__container{
+.c-article__container{
     display: flex;
     flex-direction:column;
+    padding: 5%;
     @include m.tb{
         flex-direction: row;
     };
 
 }
+.c-all-cards__container{
+    display: flex;
+    flex-direction:column;
+    padding: 0 5% 5% 5%;
+}
 .c-card__container{
-    margin: 0 5% 5% 5%;
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 5%;
+    @include m.tb{
+        flex-direction: row;
+    };
+
 }
 .c-card-title__container{
-    padding: 30px 5%;
+    flex: 1;
+    padding: 5%;
     background-color: #3C2B1C;
 }
 .c-top-title__container{
-    padding: 30px 5%;
+    padding: 5%;
 }
 .c-front-inner__container{
     width: 100%;
@@ -41,4 +54,11 @@
     @include m.pc{
         width: 60%;
     };
+}
+
+.c-btn-area__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8%;
 }
