@@ -95,13 +95,14 @@
     };
  }
 .c-card__image{
-    flex: 1;
+    
     min-height: 230px;
     background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:left;
     @include m.tb{
+        width: 50%;
         background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
     };
     @include m.pc{

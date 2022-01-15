@@ -517,9 +517,13 @@ th {
 }
 
 .c-card-title__container {
-  flex: 1;
   padding: 5%;
   background-color: #3C2B1C;
+}
+@media (min-width: 600px) {
+  .c-card-title__container {
+    width: 50%;
+  }
 }
 
 .c-top-title__container {
@@ -687,7 +691,6 @@ th {
 }
 
 .c-card__image {
-  flex: 1;
   min-height: 230px;
   background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
   background-repeat: no-repeat;
@@ -696,6 +699,7 @@ th {
 }
 @media (min-width: 600px) {
   .c-card__image {
+    width: 50%;
     background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
   }
 }

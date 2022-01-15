@@ -24,9 +24,11 @@
 
 }
 .c-card-title__container{
-    flex: 1;
     padding: 5%;
     background-color: #3C2B1C;
+    @include m.tb{
+        width: 50%;
+    };
 }
 .c-top-title__container{
     padding: 5%;
