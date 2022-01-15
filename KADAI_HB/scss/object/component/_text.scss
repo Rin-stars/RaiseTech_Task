@@ -17,9 +17,16 @@
     };
 }
 
-.c-footer__text{
+.c-footer__text--big{
+    font-size: 20px;
+    font-family: 'M+ 1m';
+    color: white;
+}
+.c-footer__text--small{
     font-size: 14px;
     padding-top: 34px;
+    font-family: 'M+ 1m';
+    color: white;
 }
 
 
@@ -57,13 +64,6 @@
     font-size: 23px;
     font-weight: bold;
     font-family: 'M+ 1m';
-
-    @include m.tb{
-        font-size: 30px;
-    };
-    @include m.pc{
-        font-size: 40px;
-    };
 }
 .c-text--M1m-20-lh29-bold{
     padding-bottom: 25px;

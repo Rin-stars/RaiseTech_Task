@@ -5,8 +5,8 @@
 
     @include m.pc{
         position: relative;
-        top: 82px;
-        left: 46px;
+        top: 80px;
+        left: 40px;
         font-size: 34px;
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
@@ -17,19 +17,24 @@
 }
 .p-nav{
     position: relative;
-    top: 212px;
-    left: 46px;
+    top: 130px;
 }
-.p-nav__category{
-    font-family: 'M+ 1m';
-    color: #707070;
-}
+
 .p-nav__item{
         padding: 10px;
         font-size: 20px;
+        font-family: 'M+ 1m';
+        color: #707070;
+
+        > a{
+            font-family: 'M+ 1m';
+            color: #707070;
+        }
 }
 .p-nav__item:first-child{
         padding: 30px 0px;
         font-size: 24px;
         font-weight: bold;
+        font-family: 'M+ 1m';
+        color: #707070;
 }

@@ -1,3 +1,26 @@
 .f-wrap-body{               //フッター除くbody全体を囲ったdiv要素。
     position: relative;     //サイドバー（position: absolute）のhight100％を有効にするために使用。
 }
+
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    color: #000000;
+  }
+a:focus {
+    outline: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
+

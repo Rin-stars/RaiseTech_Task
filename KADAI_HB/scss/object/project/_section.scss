@@ -66,14 +66,9 @@
 }
 .p-footer{
     text-align: center;
-    height: 150px;
+    max-height: 150px;
     padding-top: 40px;
     padding-bottom: 30px;
     background-color: #9D8670;
-    font-family: 'M+ 1m';
-    color: white;
 
-    > span {
-        font-size: 20px;      
-    }
 }

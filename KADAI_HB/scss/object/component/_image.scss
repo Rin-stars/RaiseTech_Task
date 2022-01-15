@@ -45,7 +45,7 @@
     background-position: center;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 41px;
+    font-size: 40px;
     color: white;
 
     display: flex;
@@ -57,16 +57,17 @@
         top: 10px;
     }
 
+
     @include m.tb{
         width: 100%;
         margin: 40px 3%;
         background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
-        font-size: 44px;
+        font-size: 40px;
     };
     @include m.pc{
         margin: 50px 3%;
         background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
-        font-size: 80px;
+        font-size: 55px;
     };
 }
 .c-front__image--right{
@@ -102,7 +103,7 @@
     background-size:cover;
     background-position:left;
     @include m.tb{
-        width: 50%;
+        width: 55%;
         background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
     };
     @include m.pc{
