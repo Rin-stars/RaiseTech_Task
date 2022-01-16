@@ -1,0 +1,7 @@
+@use '../../foundation/mixin' as m;
+
+.c-flex--space-between--ta-center{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}

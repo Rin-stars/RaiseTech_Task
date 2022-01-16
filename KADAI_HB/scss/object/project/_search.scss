@@ -13,7 +13,7 @@
         margin: auto 20px;
     };
     @include m.pc-s{
-        width: 390px;   //test
+        width: 370px;   //test
     };
 
 }
@@ -21,8 +21,8 @@
     position:absolute; 
     left:0;
     top:0; 
-    width:230px;
-    height:46px;
+    width:180px;
+    height:44px;
     padding: 0 10px 0 40px;
     background:#FFFFFF;
     border-radius: 10px;
@@ -31,10 +31,10 @@
     outline:0;	
     font-size: 18px;
     @include m.tb{
-        width: 396px;
+        width: 350px;
     };
     @include m.pc-s{
-        width: 280px;   //test
+        width: 200px;
     };
 
 }

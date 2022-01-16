@@ -5,6 +5,11 @@
     top: 14px;
     right: 10px;  
     font-size: 20px;
+    color:#707070;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
     @include m.tb{
         font-size: 34px;
     };
@@ -39,27 +44,94 @@
     font-size:16px;
     font-weight: bold;
     font-family: 'M+ 1m';
+    cursor: pointer;
     @include m.tb{
         left: 410px;
         width: 136px;
     };
     @include m.pc-s{
         width: 100px;
-        left: 290px;
+        left: 260px;
     };
 }
 .c-read-more__btn{   
     width:163px;
     height:42px;
-    background:#F2EDE9;
-    border-radius:30px;
-    border-color: white;
+    margin-top: 40px;
+    background:white;
+    border-radius:40px;
     color:#707070;
     font-size:16px;
     font-weight: bold;
     font-family: 'M+ 1m';
+    cursor: pointer;
     @include m.pc{
         height: 76px;
         width: 292px;
     };
+}
+
+.c-page__btn--prev{
+    width: 50px;
+    margin-left: 25px;
+}
+.c-page__btn--next{
+    width: 50px;
+    margin-right: 25px;
+}
+.c-page__pe-btn--prev::before{  
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    display: block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    border-top:1px solid #707070;
+    border-right:1px solid #707070;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.c-page__pe-btn--prev::after{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+
+    display: block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    border-top:1px solid #707070;
+    border-right:1px solid #707070;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.c-page__pe-btn--next::before{  
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    display: block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    border-top:1px solid #707070;
+    border-right:1px solid #707070;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.c-page__pe-btn--next::after{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+    display: block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    border-top:1px solid #707070;
+    border-right:1px solid #707070;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

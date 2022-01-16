@@ -23,6 +23,7 @@
 @use "object/component/color";
 @use "object/component/container";
 @use "object/component/cover";
+@use "object/component/flex";
 @use "object/component/image";
 @use "object/component/link";
 @use "object/component/text";
@@ -37,4 +38,4 @@
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-
+@use "object/utility/padding";
