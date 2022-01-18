@@ -11,7 +11,7 @@
     background: transparent;
     cursor: pointer;
     @include m.tb{
-        font-size: 34px;
+        font-size: 30px;
     };
     @include m.pc{
         display: none;
@@ -73,11 +73,11 @@
 
 .c-page__btn--prev{
     width: 50px;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 .c-page__btn--next{
     width: 50px;
-    margin-right: 25px;
+    margin-right: 7px;
 }
 .c-page__pe-btn--prev::before{  
     position: absolute;
@@ -95,7 +95,7 @@
 }
 .c-page__pe-btn--prev::after{
     position: absolute;
-    left: 10px;
+    left: 8px;
     top: 5px;
 
     display: block;
@@ -123,7 +123,7 @@
 }
 .c-page__pe-btn--next::after{
     position: absolute;
-    right: 10px;
+    right: 8px;
     top: 5px;
 
     display: block;

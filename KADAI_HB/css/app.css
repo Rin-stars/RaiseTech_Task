@@ -338,7 +338,7 @@ template {
   display: none;
 }
 
-.f-wrap-body {
+.f-body-wrap {
   position: relative;
 }
 
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, p {
 }
 @media (min-width: 600px) {
   .c-nav__btn--open {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 @media (min-width: 1025px) {
@@ -453,12 +453,12 @@ h1, h2, h3, h4, h5, p {
 
 .c-page__btn--prev {
   width: 50px;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .c-page__btn--next {
   width: 50px;
-  margin-right: 25px;
+  margin-right: 7px;
 }
 
 .c-page__pe-btn--prev::before {
@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, p {
 
 .c-page__pe-btn--prev::after {
   position: absolute;
-  left: 10px;
+  left: 8px;
   top: 5px;
   display: block;
   content: "";
@@ -502,7 +502,7 @@ h1, h2, h3, h4, h5, p {
 
 .c-page__pe-btn--next::after {
   position: absolute;
-  right: 10px;
+  right: 8px;
   top: 5px;
   display: block;
   content: "";
@@ -525,30 +525,8 @@ h1, h2, h3, h4, h5, p {
   color: #707070;
 }
 
-.c-article__container {
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 600px) {
-  .c-article__container {
-    flex-direction: row;
-  }
-}
-
-.c-all-cards__container {
-  display: flex;
-  flex-direction: column;
-}
-
 .c-card__container {
-  display: flex;
-  flex-direction: column;
   padding: 0 5% 5% 5%;
-}
-@media (min-width: 600px) {
-  .c-card__container {
-    flex-direction: row;
-  }
 }
 
 .c-card-title__container {
@@ -602,16 +580,10 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
-.c-btn-area__container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .c-page__container {
   padding: 10px;
   height: 40px;
-  margin: 50px 5% 10px 5%;
+  margin: 30px 5% 0 5%;
 }
 
 .c-btn__container {
@@ -629,10 +601,29 @@ h1, h2, h3, h4, h5, p {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.c-flex--space-between--ta-center {
+.c-flex--jc-space-between {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+}
+
+.c-flex--jc-center {
+  display: flex;
+  justify-content: center;
+}
+
+.c-flex--fd-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-flex--fd-column-to-row {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .c-flex--fd-column-to-row {
+    flex-direction: row;
+  }
 }
 
 .c-top__image--small {
@@ -896,6 +887,10 @@ h1, h2, h3, h4, h5, p {
 /**********************/
 /* Others
 /**********************/
+.c-text-align--center {
+  text-align: center;
+}
+
 .p-nav__title {
   display: none;
 }

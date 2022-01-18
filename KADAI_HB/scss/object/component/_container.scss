@@ -1,25 +1,7 @@
 @use '../../foundation/mixin' as m;
 
-.c-article__container{
-    display: flex;
-    flex-direction:column;
-    @include m.tb{
-        flex-direction: row;
-    };
-
-}
-.c-all-cards__container{
-    display: flex;
-    flex-direction:column;
-}
 .c-card__container{
-    display: flex;
-    flex-direction:column;
     padding: 0 5% 5% 5%;
-    @include m.tb{
-        flex-direction: row;
-    };
-
 }
 .c-card-title__container{
     padding: 5%;
@@ -59,16 +41,10 @@
     };
 }
 
-.c-btn-area__container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 .c-page__container{
     padding: 10px;
     height: 40px;
-    margin:50px 5% 10px 5%;
+    margin:30px 5% 0 5%;
 }
 .c-btn__container{
     width: 70px;

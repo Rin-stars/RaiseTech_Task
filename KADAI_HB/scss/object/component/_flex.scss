@@ -1,7 +1,21 @@
 @use '../../foundation/mixin' as m;
 
-.c-flex--space-between--ta-center{
+.c-flex--jc-space-between{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+}
+.c-flex--jc-center{
+    display: flex;
+    justify-content: center;
+}
+.c-flex--fd-column{
+    display: flex;
+    flex-direction:column;  
+}
+.c-flex--fd-column-to-row{
+    display: flex;
+    flex-direction:column;
+    @include m.tb{
+        flex-direction: row;
+    };
 }
