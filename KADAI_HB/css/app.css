@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, p {
 .c-search__btn {
   position: absolute;
   top: 0;
-  left: 240px;
+  left: 220px;
   text-align: center;
   width: 78px;
   height: 46px;
@@ -508,12 +508,12 @@ h1, h2, h3, h4, h5, p {
 }
 
 .c-card-title__container {
-  padding: 5%;
+  padding: 5% 7% 5% 5%;
   background-color: #3C2B1C;
 }
 @media (min-width: 600px) {
   .c-card-title__container {
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -622,48 +622,55 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
-.c-top__image--small {
-  width: 100vw;
-  height: 45vh;
+.c-front-top__image {
+  width: auto;
+  height: 100%;
+  max-height: 283px;
+  padding: 120px 8%;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 5%;
-}
-
-.c-front-top__image {
   background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
 }
 @media (min-width: 600px) {
   .c-front-top__image {
+    max-height: 283px;
+    background-position: center;
     background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
   }
 }
 @media (min-width: 1025px) {
   .c-front-top__image {
+    max-height: 530px;
+    padding: 150px 5%;
     background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
   }
 }
 
 .c-archive-top__image {
+  width: auto;
+  height: 100%;
   max-height: 283px;
+  padding: 120px 8%;
   background-color: black;
   background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
 }
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
   .c-archive-top__image {
-    max-height: 239px;
+    max-height: 283px;
     background-position: center;
     background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
   }
 }
-
-.c-top__image--medium {
-  width: 100vw;
-  height: 35vh;
+@media (min-width: 1025px) {
+  .c-archive-top__image {
+    max-height: 239px;
+    padding: 90px 5%;
+    background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
+  }
 }
 
 .c-front__image--left, .c-front__image--right {
@@ -697,7 +704,7 @@ h1, h2, h3, h4, h5, p {
   .c-front__image--left, .c-front__image--right {
     margin: 50px 3%;
     background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -742,7 +749,7 @@ h1, h2, h3, h4, h5, p {
 }
 @media (min-width: 600px) {
   .c-card__image {
-    width: 55%;
+    width: 53%;
     background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
   }
 }
@@ -800,7 +807,7 @@ h1, h2, h3, h4, h5, p {
 }
 @media (min-width: 1025px) {
   .c-text--M1m-36-bold {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
@@ -952,7 +959,7 @@ h1, h2, h3, h4, h5, p {
 
 .p-search {
   position: relative;
-  width: 318px;
+  width: 310px;
   height: 46px;
   margin: 0 auto;
 }
@@ -977,7 +984,7 @@ h1, h2, h3, h4, h5, p {
   position: absolute;
   left: 0;
   top: 0;
-  width: 180px;
+  width: 160px;
   height: 44px;
   padding: 0 10px 0 40px;
   background: #FFFFFF;
@@ -1092,6 +1099,12 @@ h1, h2, h3, h4, h5, p {
 
 .c-page-nav__btn .u-border--none {
   border: none;
+}
+
+@media (min-width: 600px) {
+  .u-padding-tb-22-30 {
+    padding: 22px 30px;
+  }
 }
 
 .u-text-align--center {

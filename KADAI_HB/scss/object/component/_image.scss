@@ -1,43 +1,49 @@
 @use '../../foundation/mixin' as m;
 
-.c-top__image--small{
-    width: 100vw;
-    height: 45vh;
+.c-front-top__image{
+    width: auto;
+    height: 100%;
+    max-height: 283px;
+    padding: 120px 8%;
+    background-position: left;
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 5%;
-}
-.c-front-top__image{
     background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
     @include m.tb{
+        max-height: 283px;
+        background-position: center;
         background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
     };
     @include m.pc{
+        max-height: 530px;
+        padding: 150px 5%;
         background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
     };
 }
 .c-archive-top__image{
+    width: auto;
+    height: 100%;
     max-height: 283px;
+    padding: 120px 8%;
     background-color: black;
     background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover;
     background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
-
-    @include m.pc{
-        max-height: 239px;
+    @include m.tb{
+        max-height: 283px;
         background-position: center;
         background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
     };
-}
-.c-top__image--medium{
-    width: 100vw;
-    height: 35vh;
+    @include m.pc{
+        max-height: 239px;
+        padding: 90px 5%;
+        background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
+    };
 }
 .c-front__image--left{
     position: relative;
-    min-height: 643px;  //設定は好みによる？なくても大丈夫。
+    min-height: 643px;
     margin: 20px 5%;
     background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
     background-repeat: no-repeat;
@@ -67,7 +73,7 @@
     @include m.pc{
         margin: 50px 3%;
         background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
-        font-size: 55px;
+        font-size: 50px;
     };
 }
 .c-front__image--right{
@@ -96,14 +102,13 @@
     };
  }
 .c-card__image{
-    
     min-height: 230px;
     background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:left;
     @include m.tb{
-        width: 55%;
+        width: 53%;
         background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
     };
     @include m.pc{

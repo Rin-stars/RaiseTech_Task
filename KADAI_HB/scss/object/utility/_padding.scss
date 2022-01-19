@@ -1,0 +1,7 @@
+@use '../../foundation/mixin' as m;
+
+.u-padding-tb-22-30{
+    @include m.tb{
+        padding: 22px 30px;
+    };    
+}
