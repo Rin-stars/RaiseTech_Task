@@ -601,6 +601,21 @@ h1, h2, h3, h4, h5, p {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.c-display--none-to-block {
+  display: none;
+}
+@media (min-width: 600px) {
+  .c-display--none-to-block {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  .c-display--tb-none {
+    display: none;
+  }
+}
+
 .c-flex--jc-space-between {
   display: flex;
   justify-content: space-between;

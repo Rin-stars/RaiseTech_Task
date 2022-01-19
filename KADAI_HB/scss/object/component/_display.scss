@@ -1,0 +1,13 @@
+@use '../../foundation/mixin' as m;
+
+.c-display--none-to-block{
+    display: none;
+	@include m.tb{
+        display: block;
+    };
+}
+.c-display--tb-none{
+	@include m.tb{
+        display: none;
+    };
+}
