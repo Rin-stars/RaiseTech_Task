@@ -23,7 +23,7 @@
         flex-direction: row;
     };
 }
-.c-flex--jc-space-between-from-pc{
+.c-flex--pc-jc-space-between{
     @include m.pc{
         display: flex;
         justify-content: space-between;

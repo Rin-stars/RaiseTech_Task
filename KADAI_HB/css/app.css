@@ -723,7 +723,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 @media (min-width: 1025px) {
-  .c-flex--jc-space-between-from-pc {
+  .c-flex--pc-jc-space-between {
     display: flex;
     justify-content: space-between;
   }
