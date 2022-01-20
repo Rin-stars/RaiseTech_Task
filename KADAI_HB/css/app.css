@@ -460,11 +460,6 @@ h1, h2, h3, h4, h5, p {
     font-size: 30px;
   }
 }
-@media (min-width: 1025px) {
-  .c-nav__btn--open {
-    display: none;
-  }
-}
 
 .c-nav__btn--close {
   position: absolute;
@@ -473,11 +468,6 @@ h1, h2, h3, h4, h5, p {
   height: 32px;
   width: 32px;
   cursor: pointer;
-}
-@media (min-width: 1025px) {
-  .c-nav__btn--close {
-    display: none;
-  }
 }
 
 .c-search__btn {
@@ -583,6 +573,10 @@ h1, h2, h3, h4, h5, p {
 /**********************/
 /* background-color
 /**********************/
+.c-bg-color--black {
+  background-color: black;
+}
+
 .c-bg-color--darkbrown {
   background-color: #3C2B1C;
 }
@@ -597,6 +591,14 @@ h1, h2, h3, h4, h5, p {
 
 .c-bg-color--dull-lightbeige {
   background-color: #F2EDE9;
+}
+
+.c-bg-color--tp50-black {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.c-bg-color--tp60-black {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .c-card__container {
@@ -692,6 +694,12 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
+@media (min-width: 1025px) {
+  .c-display--pc-none {
+    display: none;
+  }
+}
+
 .c-flex--jc-center {
   display: flex;
   justify-content: center;
@@ -700,6 +708,11 @@ h1, h2, h3, h4, h5, p {
 .c-flex--jc-space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.c-inline-flex--jc-center {
+  display: inline-flex;
+  justify-content: center;
 }
 
 .c-flex--ai-flex-end {
@@ -730,49 +743,63 @@ h1, h2, h3, h4, h5, p {
 }
 
 /**********************/
+/* backgroundプロパティ
+/**********************/
+.c-bgp--left-cover-no-repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.c-bgp--center-cover-no-repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 600px) {
+  .c-bgp-left-to-tb-center {
+    background-position: center;
+  }
+}
+
+/**********************/
 /* フロントページ画像
 /**********************/
-.c-front-top__image {
+.c-image--front-top {
   width: auto;
   height: 100%;
   max-height: 283px;
   padding: 120px 8%;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
 }
 @media (min-width: 600px) {
-  .c-front-top__image {
+  .c-image--front-top {
     max-height: 283px;
-    background-position: center;
     background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
   }
 }
 @media (min-width: 1025px) {
-  .c-front-top__image {
+  .c-image--front-top {
     max-height: 530px;
     padding: 150px 5%;
     background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
   }
 }
 
-.c-front__image--left, .c-front__image--right {
+.c-image--front-left-center, .c-image--front-right-center {
   position: relative;
   min-height: 643px;
   margin: 20px 5%;
   background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
-.c-front__image--left > h3, .c-front__image--right > h3 {
+.c-image--front-left-center > h3, .c-image--front-right-center > h3 {
   position: absolute;
   left: 10px;
   top: 10px;
 }
 @media (min-width: 600px) {
-  .c-front__image--left, .c-front__image--right {
+  .c-image--front-left-center, .c-image--front-right-center {
     width: 100%;
     margin: 40px 3%;
     background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
@@ -780,23 +807,23 @@ h1, h2, h3, h4, h5, p {
   }
 }
 @media (min-width: 1025px) {
-  .c-front__image--left, .c-front__image--right {
+  .c-image--front-left-center, .c-image--front-right-center {
     margin: 50px 3%;
     background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
     font-size: 50px;
   }
 }
 
-.c-front__image--right {
+.c-image--front-right-center {
   background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
 }
 @media (min-width: 600px) {
-  .c-front__image--right {
+  .c-image--front-right-center {
     background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
   }
 }
 @media (min-width: 1025px) {
-  .c-front__image--right {
+  .c-image--front-right-center {
     background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
   }
 }
@@ -804,47 +831,39 @@ h1, h2, h3, h4, h5, p {
 /**********************/
 /* アーカイブページ画像
 /**********************/
-.c-archive-top__image {
+.c-image--archive-top {
   width: auto;
   height: 100%;
   max-height: 283px;
   padding: 120px 8%;
-  background-color: black;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
 }
 @media (min-width: 600px) {
-  .c-archive-top__image {
+  .c-image--archive-top {
     max-height: 283px;
-    background-position: center;
     background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
   }
 }
 @media (min-width: 1025px) {
-  .c-archive-top__image {
+  .c-image--archive-top {
     max-height: 239px;
     padding: 90px 5%;
     background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
   }
 }
 
-.c-card__image {
+.c-image--card {
   min-height: 230px;
   background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
 }
 @media (min-width: 600px) {
-  .c-card__image {
+  .c-image--card {
     width: 53%;
     background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
   }
 }
 @media (min-width: 1025px) {
-  .c-card__image {
+  .c-image--card {
     background-image: url(/images/img_PC_archive-page/PC_archive_index_card.png);
   }
 }
@@ -852,22 +871,29 @@ h1, h2, h3, h4, h5, p {
 /**********************/
 /* マップ画像
 /**********************/
-.c-map__image {
+.c-image--map {
   background-image: url(/images/img_iPhone_front-page/map.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 600px) {
-  .c-map__image {
+  .c-image--map {
     background-image: url(/images/img_TB_front-page/TB__map.png);
   }
 }
 @media (min-width: 1025px) {
-  .c-map__image {
+  .c-image--map {
     background-image: url(/images/img_PC_front-page/PC__map.png);
   }
+}
+
+/**********************/
+/* サーチ画像
+/**********************/
+.c-img--search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 /**********************/
@@ -929,6 +955,11 @@ h1, h2, h3, h4, h5, p {
   padding-bottom: 20px;
   font-size: 23px;
   font-weight: bold;
+  font-family: "M+ 1m";
+}
+
+.c-text--M1m-20 {
+  font-size: 20px;
   font-family: "M+ 1m";
 }
 
@@ -1003,6 +1034,11 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
+.c-text--Roboto-34 {
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+}
+
 .c-text--Roboto-32-to-tb45 {
   font-size: 32px;
   font-family: "Roboto", sans-serif;
@@ -1062,11 +1098,6 @@ h1, h2, h3, h4, h5, p {
   top: 130px;
 }
 
-.p-nav__title {
-  font-size: 34px;
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-}
 @media (min-width: 1025px) {
   .p-nav__title {
     position: relative;
@@ -1097,7 +1128,6 @@ h1, h2, h3, h4, h5, p {
   top: 0;
   left: 0;
   z-index: 9995;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .p-search {
@@ -1146,14 +1176,6 @@ h1, h2, h3, h4, h5, p {
   .p-search__input {
     width: 200px;
   }
-}
-
-.p-search__img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 24px;
-  height: 24px;
 }
 
 .c-page-nav__btn .u-border--none {

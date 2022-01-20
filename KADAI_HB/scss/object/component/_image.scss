@@ -1,20 +1,36 @@
 @use '../../foundation/mixin' as m;
 
 /**********************/
+/* backgroundプロパティ
+/**********************/
+.c-bgp--left-cover-no-repeat{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+}
+.c-bgp--center-cover-no-repeat{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.c-bgp-left-to-tb-center{
+    @include m.tb{
+        background-position: center;
+    };
+}
+
+
+/**********************/
 /* フロントページ画像
 /**********************/
-.c-front-top__image{
+.c-image--front-top{
     width: auto;
     height: 100%;
     max-height: 283px;
     padding: 120px 8%;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size:cover;
     background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
     @include m.tb{
         max-height: 283px;
-        background-position: center;
         background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
     };
     @include m.pc{
@@ -23,14 +39,11 @@
         background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
     };
 }
-.c-front__image--left{
+.c-image--front-left-center{
     position: relative;
     min-height: 643px;
     margin: 20px 5%;
     background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
 
     > h3{
         position: absolute;
@@ -51,8 +64,8 @@
         font-size: 50px;
     };
 }
-.c-front__image--right{
-    @extend .c-front__image--left;
+.c-image--front-right-center{
+    @extend .c-image--front-left-center;
     background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
 
     @include m.tb{
@@ -66,19 +79,14 @@
 /**********************/
 /* アーカイブページ画像
 /**********************/
-.c-archive-top__image{
+.c-image--archive-top{
     width: auto;
     height: 100%;
     max-height: 283px;
     padding: 120px 8%;
-    background-color: black;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size:cover;
     background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
     @include m.tb{
         max-height: 283px;
-        background-position: center;
         background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
     };
     @include m.pc{
@@ -87,12 +95,9 @@
         background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
     };
 }
-.c-card__image{
+.c-image--card{
     min-height: 230px;
     background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:left;
     @include m.tb{
         width: 53%;
         background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
@@ -105,13 +110,8 @@
 /**********************/
 /* マップ画像
 /**********************/
-.c-map__image{
+.c-image--map{
     background-image: url(/images/img_iPhone_front-page/map.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-color: rgba(0,0,0,0.6);
-
     @include m.tb{
         background-image: url(/images/img_TB_front-page/TB__map.png);
     };
@@ -119,3 +119,14 @@
         background-image: url(/images/img_PC_front-page/PC__map.png);
     };
  }
+
+/**********************/
+/* サーチ画像
+/**********************/
+ .c-img--search{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+}

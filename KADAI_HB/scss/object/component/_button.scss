@@ -13,9 +13,6 @@
     @include m.tb{
         font-size: 30px;
     };
-    @include m.pc{
-        display: none;
-    };
 }
 .c-nav__btn--close{
     position: absolute;
@@ -23,10 +20,7 @@
     top: 25px;
     height: 32px;
     width: 32px;
-    cursor: pointer;
-    @include m.pc{
-        display: none;
-    };    
+    cursor: pointer;   
 }
 
 .c-search__btn{

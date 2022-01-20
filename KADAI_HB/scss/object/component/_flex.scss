@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
 }
+.c-inline-flex--jc-center{ //＋align-items: centerでボタン配置しやすい。
+    display: inline-flex;
+    justify-content: center;
+}
 .c-flex--ai-flex-end{
     display: flex;
     align-items: flex-end;

@@ -18,6 +18,9 @@
 /**********************/
 /* background-color
 /**********************/
+.c-bg-color--black{
+    background-color: black;
+}
 .c-bg-color--darkbrown{
     background-color: #3C2B1C;
 }
@@ -29,4 +32,10 @@
 }
 .c-bg-color--dull-lightbeige{
     background-color: #F2EDE9;
+}
+.c-bg-color--tp50-black{
+    background: rgba(0,0,0,.5);
+}
+.c-bg-color--tp60-black{
+    background: rgba(0,0,0,.6);
 }

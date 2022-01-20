@@ -17,3 +17,8 @@
         display: none;
     };
 }
+.c-display--pc-none{
+	@include m.pc{
+        display: none;
+    };
+}
