@@ -1,33 +1,26 @@
 @use '../../foundation/mixin' as m;
 
-.p-nav__title{
-    display: none;
-
-    @include m.pc{
-        position: relative;
-        top: 80px;
-        left: 40px;
-        font-size: 34px;
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif;
-        color: #707070;
-        display: block;
-    };
-
-}
 .p-nav{
     position: relative;
     top: 130px;
 }
+.p-nav__title{
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+    @include m.pc{
+        position: relative;
+        top: 80px;
+        left: 40px;
+    };
 
+}
 .p-nav__item{
         padding: 10px;
-        font-size: 20px;
         font-family: 'M+ 1m';
-        color: #707070;
+        font-size: 20px;
 
         > a{
-            font-family: 'M+ 1m';
             color: #707070;
         }
 }
@@ -35,6 +28,13 @@
         padding: 30px 0px;
         font-size: 24px;
         font-weight: bold;
-        font-family: 'M+ 1m';
-        color: #707070;
+}
+.p-nav__bg{
+    position: fixed;
+    height: 0;  //デフォルトは0で背景色なし。
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9995;
+	background: rgba(0,0,0,.5);
 }

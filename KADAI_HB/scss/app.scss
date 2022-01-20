@@ -22,11 +22,10 @@
 @use "object/component/button";
 @use "object/component/color";
 @use "object/component/container";
-@use "object/component/cover";
 @use "object/component/display";
 @use "object/component/flex";
 @use "object/component/image";
-@use "object/component/link";
+@use "object/component/text-align";
 @use "object/component/text";
 
 // -----------------------------------------------------------------
@@ -34,11 +33,10 @@
 // -----------------------------------------------------------------
 @use "object/project/navigation";
 @use "object/project/search";
-@use "object/project/section";
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
 @use "object/utility/border";
+@use "object/utility/others";
 @use "object/utility/padding";
-@use "object/utility/position";

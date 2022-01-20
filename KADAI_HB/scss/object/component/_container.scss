@@ -18,14 +18,14 @@
 }
 .c-front-inner__container{
     width: 100%;
-    padding-top: 60px;
+    padding-top: 70px;
 
     @include m.tb{
         font-size: 120px;
-        padding-top: 90px;
+        padding-top: 120px;
     };
     @include m.pc{
-        padding-top: 120px;
+        padding-top: 140px;
     };
 }
 .c-front-items__container{

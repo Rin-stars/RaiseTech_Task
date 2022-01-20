@@ -1,0 +1,11 @@
+@use '../foundation/mixin' as m;
+
+.l-header{
+    height: 217px;
+    @include m.pc{
+        width: calc(100% - 367px);
+    };
+    @include m.pc-s{
+        width: calc(100% - 270px);
+    };
+}

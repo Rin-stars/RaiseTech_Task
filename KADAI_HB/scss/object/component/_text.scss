@@ -1,40 +1,9 @@
 @use '../../foundation/mixin' as m;
 
-.c-logo__text{
-    padding: 40px;
-    font-size: 40px; 
-    text-align: center;
-    @include m.pc{
-        width: 40%;
-        margin: 45px 20px;
-        padding: 20px;
-        font-size: 64px;
-        text-align: initial;
-    };
-    @include m.pc-s{
-        margin: 50px 10px;
-        font-size: 55px;
-    };
-}
-
-.c-footer__text--big{
-    font-size: 20px;
-    font-family: 'M+ 1m';
-    color: white;
-}
-.c-footer__text--small{
-    font-size: 14px;
-    padding-top: 34px;
-    font-family: 'M+ 1m';
-    color: white;
-}
-
-
-
 /**********************/
 /* font-family: 'M+ 1m'
 /**********************/
-.c-text--M1m-36-bold{
+.c-text--M1m-36-to-pc40-bold{
     font-size: 36px;
     font-weight: bold;
     font-family: 'M+ 1m';
@@ -42,7 +11,7 @@
         font-size: 40px;
     };
 }
-.c-text--M1m-30-bold{
+.c-text--M1m-30-to-pc36-bold{
     padding-bottom: 15px;
     font-size: 30px;
     font-weight: bold;
@@ -53,7 +22,7 @@
         font-size: 36px;
     };
 }
-.c-text--M1m-28-bold{
+.c-text--M1m-28-to-tb30-bold{
     padding-bottom: 30px;
     font-family: 'M+ 1m';
     font-weight: bold;
@@ -68,7 +37,7 @@
     font-weight: bold;
     font-family: 'M+ 1m';
 }
-.c-text--M1m-20-lh29-bold{
+.c-text--M1m-20-to-pc28-lh29-bold{
     padding-bottom: 25px;
     line-height: 29px;
     font-family: 'M+ 1m';
@@ -89,7 +58,7 @@
     font-family: 'M+ 1m';
     font-size: 16px; 
 }
-.c-text--M1m-16-lh23-bold{
+.c-text--M1m-16-to-pc20-lh23-bold{
     padding-bottom: 10px;
     line-height: 23px;
     font-family: 'M+ 1m';
@@ -101,7 +70,7 @@
         font-size: 20px;
     };
 }
-.c-text--M1m-14-lh33-bold{
+.c-text--M1m-14-to-pc16-lh33-bold{
     font-size: 14px;
     font-weight: bold;
     font-family: 'M+ 1m';
@@ -115,7 +84,18 @@
 /**********************/
 /* font-family: 'Roboto'
 /**********************/
-.c-text--Roboto-32{
+.c-text--Roboto-40-to-45-to-50{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    @include m.tb{
+        font-size: 45px;
+    };
+    @include m.pc{
+        font-size: 50px;
+    };
+
+}
+.c-text--Roboto-32-to-tb45{
     font-size: 32px;
     font-family: 'Roboto', sans-serif;
     @include m.tb{
@@ -127,9 +107,36 @@
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+.c-text--Roboto{
+    font-family: 'Roboto', sans-serif;
+}
 
 
 /**********************/
 /* Others
 /**********************/
-
+.c-logo__text{
+    padding: 40px;
+    font-size: 40px; 
+    @include m.pc{
+        width: 40%;
+        margin: 45px 20px;
+        padding: 20px;
+        font-size: 64px;
+    };
+    @include m.pc-s{
+        margin: 50px 10px;
+        font-size: 55px;
+    };
+}
+.c-footer__text--big{
+    font-size: 20px;
+    font-family: 'M+ 1m';
+    color: white;
+}
+.c-footer__text--small{
+    font-size: 14px;
+    padding-top: 34px;
+    font-family: 'M+ 1m';
+    color: white;
+}

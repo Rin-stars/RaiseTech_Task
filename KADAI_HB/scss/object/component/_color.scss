@@ -1,5 +1,8 @@
 @use '../../foundation/mixin' as m;
 
+/**********************/
+/* font-color
+/**********************/
 .c-color--white{
     color: white;
 }
@@ -11,6 +14,19 @@
 }
 
 
+
+/**********************/
+/* background-color
+/**********************/
 .c-bg-color--darkbrown{
     background-color: #3C2B1C;
+}
+.c-bg-color--lightbrown{
+    background-color: #9D8670
+}
+.c-bg-color--lightbeige{
+    background-color: #FFF7EF;
+}
+.c-bg-color--dull-lightbeige{
+    background-color: #F2EDE9;
 }
