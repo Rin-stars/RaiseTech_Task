@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, p {
 .c-btn--search {
   position: absolute;
   top: 0;
-  left: 220px;
+  left: 230px;
   width: 78px;
   height: 46px;
   border-radius: 10px;
@@ -530,7 +530,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .c-btn--page-nav li:first-child {
-  cursor: initial;
+  cursor: text;
 }
 
 /**********************/
@@ -1068,6 +1068,9 @@ h1, h2, h3, h4, h5, p {
   font-size: 24px;
   font-weight: bold;
 }
+.p-nav__item:first-child > a {
+  cursor: text;
+}
 
 .p-nav__bg {
   position: fixed;
@@ -1080,7 +1083,7 @@ h1, h2, h3, h4, h5, p {
 
 .p-search {
   position: relative;
-  width: 310px;
+  width: 308px;
   height: 46px;
   margin: 0 auto;
 }
@@ -1105,10 +1108,9 @@ h1, h2, h3, h4, h5, p {
   position: absolute;
   left: 0;
   top: 0;
-  width: 160px;
+  width: 170px;
   height: 44px;
   padding: 0 10px 0 40px;
-  background: #FFFFFF;
   border-radius: 10px;
   border-color: #707070;
   border-width: 1px;

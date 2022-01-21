@@ -22,7 +22,7 @@
 .c-btn--search{
     position:absolute; 
     top:0;
-    left: 220px; 
+    left: 230px; 
     width:78px;
     height:46px;
     border-radius:10px;
@@ -79,5 +79,5 @@
     cursor: pointer;
 }
 .c-btn--page-nav li:first-child{
-    cursor:initial;
+    cursor:text;
 }
