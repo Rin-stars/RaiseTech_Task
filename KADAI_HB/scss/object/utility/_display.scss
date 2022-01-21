@@ -1,23 +1,23 @@
 @use '../../foundation/mixin' as m;
 
-.c-display--none-to-tb-block{
+.u-display--none-to-tb-block{
     display: none;
 	@include m.tb{
         display: block;
     };
 }
-.c-display--none-to-pc-block{
+.u-display--none-to-pc-block{
     display: none;
 	@include m.pc{
         display: block;
     };
 }
-.c-display--tb-none{
+.u-display--tb-none{
 	@include m.tb{
         display: none;
     };
 }
-.c-display--pc-none{
+.u-display--pc-none{
 	@include m.pc{
         display: none;
     };

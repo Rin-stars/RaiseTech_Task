@@ -1,96 +1,20 @@
 @use '../../foundation/mixin' as m;
 
 /**********************/
-/* font-family: 'M+ 1m'
+/* font-size
 /**********************/
-.c-text--M1m-36-to-pc40-bold{
-    font-size: 36px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
-    @include m.pc{
-        font-size: 40px;
-    };
-}
-.c-text--M1m-30-to-pc36-bold{
-    padding-bottom: 15px;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
 
+.c-text--40-to-pc64-to-pcs55{
+    font-size: 40px; 
     @include m.pc{
-        padding-bottom: 40px;
-        font-size: 36px;
+        font-size: 64px;
+    };
+    @include m.pc-s{
+        font-size: 55px;
     };
 }
-.c-text--M1m-28-to-tb30-bold{
-    padding-bottom: 30px;
-    font-family: 'M+ 1m';
-    font-weight: bold;
-    font-size: 26px;
-    @include m.tb{
-        font-size: 30px;
-    };
-}
-.c-text--M1m-23-bold{
-    padding-bottom: 20px;
-    font-size: 23px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
-}
-.c-text--M1m-20{
-    font-size: 20px;
-    font-family: 'M+ 1m';
-}
-.c-text--M1m-20-to-pc28-lh29-bold{
-    padding-bottom: 25px;
-    line-height: 29px;
-    font-family: 'M+ 1m';
-    font-weight: bold;
-    font-size: 20px; 
-    @include m.pc{
-        font-size: 28px;
-    };
-}
-.c-text--M1m-16-bold{
-    padding: 10px 0 0 0;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
-}
-.c-text--M1m-16-lh23{
-    line-height: 23px;
-    font-family: 'M+ 1m';
-    font-size: 16px; 
-}
-.c-text--M1m-16-to-pc20-lh23-bold{
-    padding-bottom: 10px;
-    line-height: 23px;
-    font-family: 'M+ 1m';
-    font-weight: bold;
-    font-size: 16px; 
-    @include m.pc{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 20px;
-    };
-}
-.c-text--M1m-14-to-pc16-lh33-bold{
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
-    line-height: 33px;
-    @include m.pc{
-        font-size: 16px;
-    };
-}
-
-
-/**********************/
-/* font-family: 'Roboto'
-/**********************/
-.c-text--Roboto-40-to-45-to-50{
+.c-text--40-to-tb45-to-pc50{
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
     @include m.tb{
         font-size: 45px;
     };
@@ -99,52 +23,129 @@
     };
 
 }
-.c-text--Roboto-34{
-    font-size: 34px;
-    font-family: 'Roboto', sans-serif;
+.c-text--36-to-pc40{
+    font-size: 36px;
+    @include m.pc{
+        font-size: 40px;
+    };
 }
-.c-text--Roboto-32-to-tb45{
+.c-text--34{
+    font-size: 34px;
+}
+.c-text--32-to-tb45{
     font-size: 32px;
-    font-family: 'Roboto', sans-serif;
     @include m.tb{
         font-size: 45px;
     };
-
 }
-.c-text--Roboto-16{
+.c-text--30-to-pc36{
+    font-size: 30px;
+    @include m.pc{
+        font-size: 36px;
+    };
+}
+.c-text--26-to-tb30{
+    font-size: 26px;
+    @include m.tb{
+        font-size: 30px;
+    };
+}
+.c-text--23{
+    font-size: 23px;
+}
+.c-text--20{
+    font-size: 20px;
+}
+.c-text--20-to-tb30{
+    font-size: 20px; 
+    @include m.tb{
+        font-size: 30px;
+    };
+}
+.c-text--20-to-pc28{
+    font-size: 20px; 
+    @include m.pc{
+        font-size: 28px;
+    };
+}
+.c-text--16{ 
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+}
+.c-text--14{
+    font-size: 14px;
+}
+.c-text--14-to-pc16{
+    font-size: 14px;
+    @include m.pc{
+        font-size: 16px;
+    };
+}
+
+/**********************/
+/* font-family
+/**********************/
+.c-text--M1m{
+    font-family: 'M+ 1m';
 }
 .c-text--Roboto{
     font-family: 'Roboto', sans-serif;
+}
+
+/**********************/
+/* font-weight
+/**********************/
+.c-text--bold{
+    font-weight: bold;
+}
+
+/**********************/
+/* line-height
+/**********************/
+.c-text--lh33{
+    line-height: 33px;
+}
+.c-text--lh29{
+    line-height: 29px;
+}
+.c-text--lh23{
+    line-height: 23px;
+}
+
+/**********************/
+/* text-align
+/**********************/
+.c-text-align--center{
+    text-align: center;
+}
+.c-text-align--center-to-pc-initial{
+    text-align: center;
+    @include m.pc{
+        text-align: initial;
+    }
 }
 
 
 /**********************/
 /* Others
 /**********************/
-.c-logo__text{
+.c-text--M1m-bold-16{
+    font-family: 'M+ 1m';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.c-text--header-logo{
     padding: 40px;
-    font-size: 40px; 
     @include m.pc{
         width: 40%;
         margin: 45px 20px;
         padding: 20px;
-        font-size: 64px;
     };
     @include m.pc-s{
         margin: 50px 10px;
-        font-size: 55px;
     };
 }
-.c-footer__text--big{
-    font-size: 20px;
-    font-family: 'M+ 1m';
-    color: white;
-}
-.c-footer__text--small{
-    font-size: 14px;
-    padding-top: 34px;
-    font-family: 'M+ 1m';
-    color: white;
-}
+
+
+
+

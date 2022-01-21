@@ -1,13 +1,13 @@
 $(function(){ 
 
   // ヘッダーのMenuボタンクリック時にサイドバーを開く。
-  $('.c-nav__btn--open').click(function() {
+  $('.c-btn--nav-open').click(function() {
     $('.l-sidebar').toggleClass('is-open');
     $('.p-nav__bg').css( 'height' , '100%' );
   });
 
   // サイドバーの×ボタンクリック時にサイドバーを閉じる。
-  $('.c-nav__btn--close').click(function() {
+  $('.c-btn--nav-close').click(function() {
     $('.l-sidebar').toggleClass('is-open');
     $('.p-nav__bg').css( 'height' , '0' );
   });

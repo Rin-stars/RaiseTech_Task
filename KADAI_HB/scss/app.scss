@@ -22,10 +22,8 @@
 @use "object/component/button";
 @use "object/component/color";
 @use "object/component/container";
-@use "object/component/display";
 @use "object/component/flex";
 @use "object/component/image";
-@use "object/component/text-align";
 @use "object/component/text";
 
 // -----------------------------------------------------------------
@@ -38,5 +36,5 @@
 // Utility
 // -----------------------------------------------------------------
 @use "object/utility/border";
-@use "object/utility/others";
+@use "object/utility/display";
 @use "object/utility/padding";

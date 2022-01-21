@@ -1,20 +1,16 @@
 @use '../../foundation/mixin' as m;
 
-.c-nav__btn--open{
+.c-btn--nav-open{
     position: absolute;
     top: 14px;
     right: 10px;  
-    font-size: 20px;
-    color:#707070;
     border: none;
     outline: none;
     background: transparent;
     cursor: pointer;
-    @include m.tb{
-        font-size: 30px;
-    };
+
 }
-.c-nav__btn--close{
+.c-btn--nav-close{
     position: absolute;
     right: 7px;
     top: 25px;
@@ -23,21 +19,15 @@
     cursor: pointer;   
 }
 
-.c-search__btn{
+.c-btn--search{
     position:absolute; 
     top:0;
-    left: 220px;
-    text-align: center;    
+    left: 220px; 
     width:78px;
     height:46px;
-    background:#F2EDE9;
     border-radius:10px;
     border-color: #707070;
     border-width: 1px;
-    color:#707070;
-    font-size:16px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
     cursor: pointer;
     @include m.tb{
         left: 410px;
@@ -48,16 +38,11 @@
         left: 260px;
     };
 }
-.c-read-more__btn{   
+.c-btn--read-more{   
     width:163px;
     height:42px;
     margin-top: 40px;
-    background:white;
     border-radius:40px;
-    color:#707070;
-    font-size:16px;
-    font-weight: bold;
-    font-family: 'M+ 1m';
     cursor: pointer;
     @include m.pc{
         height: 76px;
@@ -65,7 +50,7 @@
     };
 }
 
-.c-page__pe-btn--prev::before, .c-page__pe-btn--prev::after{  
+.c-btn--pe-prev::before, .c-btn--pe-prev::after{  
     display: inline-block;
     content:"";
     width: 12px;
@@ -76,7 +61,7 @@
     transform: rotate(-135deg);
 }
 
-.c-page__pe-btn--next::before, .c-page__pe-btn--next::after{  
+.c-btn--pe-next::before, .c-btn--pe-next::after{  
     display: inline-block;
     content:"";
     width: 12px;
@@ -86,16 +71,13 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.c-page-nav__btn{
-    padding: 0;
-}
-.c-page-nav__btn li{
+.c-btn--page-nav li{
     display: inline;
     padding:7px 12px;
     margin: 0 3px;
     border:1px solid #707070;
     cursor: pointer;
 }
-.c-page-nav__btn li:first-child{
+.c-btn--page-nav li:first-child{
     cursor:initial;
 }
