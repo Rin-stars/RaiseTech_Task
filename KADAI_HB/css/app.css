@@ -575,6 +575,10 @@ h1, h2, h3, h4, h5, p {
   background-color: #F2EDE9;
 }
 
+.c-bg-color--tp30-black {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .c-bg-color--tp50-black {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -583,13 +587,16 @@ h1, h2, h3, h4, h5, p {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.c-bg-color--tp80-white {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .c-container--card {
   padding: 0 5% 5% 5%;
 }
 
 .c-container--card-title {
   padding: 5% 7% 5% 5%;
-  background-color: #3C2B1C;
 }
 @media (min-width: 600px) {
   .c-container--card-title {
@@ -625,12 +632,10 @@ h1, h2, h3, h4, h5, p {
 .c-container--front-items {
   margin: 10px;
   padding: 20px 10px;
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .c-container--map-text {
   padding: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 1025px) {
   .c-container--map-text {
