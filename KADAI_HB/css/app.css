@@ -430,7 +430,6 @@ h1, h2, h3, h4, h5, p {
     right: 0;
     height: 100%;
     transition: none;
-    overflow-y: scroll;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
