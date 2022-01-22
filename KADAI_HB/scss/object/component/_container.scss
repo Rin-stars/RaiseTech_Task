@@ -15,6 +15,12 @@
         padding: 5%;
     };
 }
+.c-container--single-main{
+    padding: 30px 5%;
+    @include m.tb{
+        padding: 60px 5%;
+    };
+}
 .c-container--front-inner{
     width: 100%;
     padding-top: 70px;

@@ -1,0 +1,8 @@
+@use '../../foundation/mixin' as m;
+
+.u-mg-top--30-to-tb50{
+    margin-top: 30px;
+    @include m.tb{
+        margin-top: 50x;
+    }
+}

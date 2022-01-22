@@ -23,6 +23,12 @@
     };
 
 }
+.c-text--36-to-tb60{
+    font-size: 36px;
+    @include m.tb{
+        font-size: 60px;
+    };
+}
 .c-text--36-to-pc40{
     font-size: 36px;
     @include m.pc{
@@ -128,6 +134,11 @@
 /**********************/
 /* Others
 /**********************/
+.c-text-deco--underline{
+    text-decoration: underline;
+}
+
+
 .c-text--M1m-bold-16{
     font-family: 'M+ 1m';
     font-weight: bold;

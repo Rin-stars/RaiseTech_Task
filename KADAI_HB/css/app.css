@@ -362,7 +362,7 @@ ul, li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
 }
@@ -382,23 +382,12 @@ h1, h2, h3, h4, h5, p {
 }
 
 @media (min-width: 1025px) {
-  .l-front {
+  .l-front, .l-archive, .l-search {
     width: calc(100% - 367px);
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .l-front {
-    width: calc(100% - 270px);
-  }
-}
-
-@media (min-width: 1025px) {
-  .l-archive {
-    width: calc(100% - 367px);
-  }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .l-archive {
+  .l-front, .l-archive, .l-search {
     width: calc(100% - 270px);
   }
 }
@@ -546,6 +535,10 @@ h1, h2, h3, h4, h5, p {
   color: #707070;
 }
 
+.c-color--dull-blue {
+  color: #4A6C9B;
+}
+
 /**********************/
 /* background-color
 /**********************/
@@ -571,6 +564,10 @@ h1, h2, h3, h4, h5, p {
 
 .c-bg-color--dull-lightbeige {
   background-color: #F2EDE9;
+}
+
+.c-bg-color--dull-lightgray {
+  background-color: #F5F5F5;
 }
 
 .c-bg-color--tp30-black {
@@ -608,6 +605,15 @@ h1, h2, h3, h4, h5, p {
 @media (min-width: 600px) {
   .c-container--top-title {
     padding: 5%;
+  }
+}
+
+.c-container--single-main {
+  padding: 30px 5%;
+}
+@media (min-width: 600px) {
+  .c-container--single-main {
+    padding: 60px 5%;
   }
 }
 
@@ -653,6 +659,10 @@ h1, h2, h3, h4, h5, p {
 
 .c-container--page-nav {
   padding: 70px 0 30px 0;
+}
+
+.c-inline-flex {
+  display: inline-flex;
 }
 
 .c-flex--jc-center {
@@ -824,6 +834,29 @@ h1, h2, h3, h4, h5, p {
 }
 
 /**********************/
+/* Singleページ画像
+/**********************/
+.c-image--single-top {
+  width: auto;
+  height: 100%;
+  max-height: 225px;
+  padding: 110px 8%;
+  background-image: url(/images/img_iPhone_single-page/single_burger_with_tomato.png);
+}
+@media (min-width: 600px) {
+  .c-image--single-top {
+    max-height: 500px;
+    padding: 240px 4%;
+    background-image: url(/images/img_TB_single-page/TB__single_burger_with_tomato.png);
+  }
+}
+@media (min-width: 1025px) {
+  .c-image--single-top {
+    background-image: url(/images/img_PC_single-page/PC__single_burger_with_tomato.png);
+  }
+}
+
+/**********************/
 /* マップ画像
 /**********************/
 .c-image--map {
@@ -879,6 +912,15 @@ h1, h2, h3, h4, h5, p {
 @media (min-width: 1025px) {
   .c-text--40-to-tb45-to-pc50 {
     font-size: 50px;
+  }
+}
+
+.c-text--36-to-tb60 {
+  font-size: 36px;
+}
+@media (min-width: 600px) {
+  .c-text--36-to-tb60 {
+    font-size: 60px;
   }
 }
 
@@ -1017,6 +1059,10 @@ h1, h2, h3, h4, h5, p {
 /**********************/
 /* Others
 /**********************/
+.c-text-deco--underline {
+  text-decoration: underline;
+}
+
 .c-text--M1m-bold-16 {
   font-family: "M+ 1m";
   font-weight: bold;
@@ -1160,6 +1206,15 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
+.u-mg-top--30-to-tb50 {
+  margin-top: 30px;
+}
+@media (min-width: 600px) {
+  .u-mg-top--30-to-tb50 {
+    margin-top: 50x;
+  }
+}
+
 .u-padding--0 {
   padding: 0;
 }
@@ -1174,8 +1229,35 @@ h1, h2, h3, h4, h5, p {
   }
 }
 
+.u-padding--30-20-to-tb50 {
+  padding: 30px 20px;
+}
+@media (min-width: 600px) {
+  .u-padding--30-20-to-tb50 {
+    padding: 50px;
+  }
+}
+
 .u-pd-top--34 {
   padding-top: 34px;
+}
+
+.u-pd-bottom--10-to-pc20-auto {
+  padding-bottom: 10px;
+}
+@media (min-width: 1025px) {
+  .u-pd-bottom--10-to-pc20-auto {
+    padding: 20px auto;
+  }
+}
+
+.u-pd-bottom--15-to-pc40 {
+  padding-bottom: 15px;
+}
+@media (min-width: 1025px) {
+  .u-pd-bottom--15-to-pc40 {
+    padding-bottom: 40px;
+  }
 }
 
 .u-pd-bottom--20 {
@@ -1190,21 +1272,12 @@ h1, h2, h3, h4, h5, p {
   padding-bottom: 30px;
 }
 
-.u-pd-bottom--15-to-pc40 {
-  padding-bottom: 15px;
+.u-pd-bottom--30-to-tb60 {
+  padding-bottom: 30px;
 }
-@media (min-width: 1025px) {
-  .u-pd-bottom--15-to-pc40 {
-    padding-bottom: 40px;
-  }
-}
-
-.u-pd-bottom--10-to-pc20-auto {
-  padding-bottom: 10px;
-}
-@media (min-width: 1025px) {
-  .u-pd-bottom--10-to-pc20-auto {
-    padding: 20px auto;
+@media (min-width: 600px) {
+  .u-pd-bottom--30-to-tb60 {
+    padding-bottom: 60px;
   }
 }
 /*# sourceMappingURL=app.css.map */

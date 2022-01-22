@@ -1,14 +1,6 @@
 @use '../foundation/mixin' as m;
 
-.l-front{
-    @include m.pc{
-        width: calc(100% - 367px);
-    };
-    @include m.pc-s{
-        width: calc(100% - 270px);
-    };
-}
-.l-archive{
+.l-front, .l-archive, .l-search{
     @include m.pc{
         width: calc(100% - 367px);
     };

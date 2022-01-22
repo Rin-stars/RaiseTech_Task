@@ -1,5 +1,8 @@
 @use '../../foundation/mixin' as m;
 
+.c-inline-flex{
+    display: inline-flex;
+}
 .c-flex--jc-center{
     display: flex;
     justify-content: center;

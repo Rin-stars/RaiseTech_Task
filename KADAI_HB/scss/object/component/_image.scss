@@ -107,6 +107,25 @@
     };  
 
 }
+
+/**********************/
+/* Singleページ画像
+/**********************/
+.c-image--single-top{
+    width: auto;
+    height: 100%;
+    max-height: 225px;
+    padding: 110px 8%;
+    background-image: url(/images/img_iPhone_single-page/single_burger_with_tomato.png);
+    @include m.tb{
+        max-height: 500px;
+        padding: 240px 4%;
+        background-image: url(/images/img_TB_single-page/TB__single_burger_with_tomato.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_PC_single-page/PC__single_burger_with_tomato.png);
+    };
+}
 /**********************/
 /* マップ画像
 /**********************/
