@@ -3,11 +3,6 @@
 /**********************/
 /* backgroundプロパティ
 /**********************/
-.c-bgp--left-cover-no-repeat{
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:left;
-}
 .c-bgp--center-cover-no-repeat{
     background-repeat: no-repeat;
     background-size:cover;
@@ -18,12 +13,21 @@
     background-size:contain;
     background-position: center;
 }
+.c-bgp--left-cover-no-repeat{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:left;
+}
 .c-bgp-left-to-tb-center{
     @include m.tb{
         background-position: center;
     };
 }
-
+.c-bgp--top-contain-no-repeat{
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top;
+}
 
 /**********************/
 /* フロントページ画像
@@ -110,12 +114,12 @@
     @include m.pc{
         background-image: url(/images/img_PC_archive-page/PC_archive_index_card.png);
     };  
-
 }
 
 /**********************/
 /* Singleページ画像
 /**********************/
+
 .c-image--single-top{
     width: auto;
     height: 100%;
@@ -132,29 +136,32 @@
     };
 }
 
-.c-image--single-second{
-    width: 100%;
-    min-height: 124px;
+.c-image--single-middle{
+    /* 横幅100%で綺麗に可変表示させる方法。height: 0、padding-top＝表示画像の高さ ÷ 表示画像の幅 × 100 */
+    height: 0;
+    padding-top: 37%;
     background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_small.png);
     @include m.tb{
-        min-height: 264px;
         background-image: url(/images/img_TB_single-page/TB__single_burger_and_frenchfries_small.png);
     };
     @include m.pc{
         background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_small.png);
     };  
 }
-.c-image--single-third{ //Working
-    width: 100%;
-    min-height: 89px;
+.c-image--single-galarry {
     background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_learge.png);
     @include m.tb{
-        min-height: 189px;
         background-image: url(/images/img_TB_single-page/TB__single_burger_and_frenchfries_learge.png);
     };
     @include m.pc{
-        min-height: 358px;
         background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_learge.png);
+    };  
+}
+.c-image--property-for-galarry{
+    height: 0;
+    padding-top: 50%;
+    @include m.pc{
+        padding-top: 30%
     };  
 }
 /**********************/

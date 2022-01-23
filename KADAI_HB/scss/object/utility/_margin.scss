@@ -9,6 +9,24 @@
 .u-mg-bottom--30-to-tb60{
     margin-bottom: 30px;
     @include m.tb{
-        margin-bottom: 60x;
+        margin-bottom: 60px;
+    }
+}
+.u-mg-left--10-20-40{
+    margin-left: 10px;
+    @include m.tb{
+        margin-left: 20px;
+    }
+    @include m.pc{
+        margin-left: 40px;
+    }
+}
+.u-mg-right--10-20-40{
+    margin-right: 10px;
+    @include m.tb{
+        margin-right: 20px;
+    }
+    @include m.pc{
+        margin-right: 40px;
     }
 }

@@ -19,6 +19,9 @@
     display: flex;
     align-items: flex-end;
 }
+.c-flex--fd-row-reverse{
+    flex-direction: row-reverse;
+}
 .c-flex--fd-column{
     display: flex;
     flex-direction:column;  
