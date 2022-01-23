@@ -6,3 +6,9 @@
         margin-top: 50x;
     }
 }
+.u-mg-bottom--30-to-tb60{
+    margin-bottom: 30px;
+    @include m.tb{
+        margin-bottom: 60x;
+    }
+}

@@ -722,6 +722,12 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: center;
 }
 
+.c-bgp--center-contain-no-repeat {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 @media (min-width: 600px) {
   .c-bgp-left-to-tb-center {
     background-position: center;
@@ -853,6 +859,41 @@ h1, h2, h3, h4, h5, h6, p {
 @media (min-width: 1025px) {
   .c-image--single-top {
     background-image: url(/images/img_PC_single-page/PC__single_burger_with_tomato.png);
+  }
+}
+
+.c-image--single-second {
+  width: 100%;
+  min-height: 124px;
+  background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_small.png);
+}
+@media (min-width: 600px) {
+  .c-image--single-second {
+    min-height: 264px;
+    background-image: url(/images/img_TB_single-page/TB__single_burger_and_frenchfries_small.png);
+  }
+}
+@media (min-width: 1025px) {
+  .c-image--single-second {
+    background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_small.png);
+  }
+}
+
+.c-image--single-third {
+  width: 100%;
+  min-height: 89px;
+  background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_learge.png);
+}
+@media (min-width: 600px) {
+  .c-image--single-third {
+    min-height: 189px;
+    background-image: url(/images/img_TB_single-page/TB__single_burger_and_frenchfries_learge.png);
+  }
+}
+@media (min-width: 1025px) {
+  .c-image--single-third {
+    min-height: 358px;
+    background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_learge.png);
   }
 }
 
@@ -1212,6 +1253,15 @@ h1, h2, h3, h4, h5, h6, p {
 @media (min-width: 600px) {
   .u-mg-top--30-to-tb50 {
     margin-top: 50x;
+  }
+}
+
+.u-mg-bottom--30-to-tb60 {
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  .u-mg-bottom--30-to-tb60 {
+    margin-bottom: 60x;
   }
 }
 
