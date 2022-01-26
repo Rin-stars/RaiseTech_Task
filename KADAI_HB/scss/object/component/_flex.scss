@@ -39,3 +39,10 @@
         justify-content: space-between;
     };
 }
+.c-flex--tb-fw-wrap-and-jc-sb{
+    @include m.tb{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}

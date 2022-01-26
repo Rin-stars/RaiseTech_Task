@@ -711,6 +711,14 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media (min-width: 600px) {
+  .c-flex--tb-fw-wrap-and-jc-sb {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
 /**********************/
 /* backgroundプロパティ
 /**********************/
@@ -903,13 +911,30 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.c-image--property-for-galarry {
+.c-image--property-for-top-galarry {
   height: 0;
   padding-top: 50%;
 }
 @media (min-width: 1025px) {
+  .c-image--property-for-top-galarry {
+    padding-top: 30%;
+  }
+}
+
+.c-image--property-for-galarry {
+  height: 0;
+  padding-top: 63%;
+}
+@media (min-width: 600px) {
   .c-image--property-for-galarry {
     padding-top: 30%;
+    padding-left: 48.1%;
+  }
+}
+@media (min-width: 1025px) {
+  .c-image--property-for-galarry {
+    padding-top: 20%;
+    padding-left: 31.3%;
   }
 }
 
