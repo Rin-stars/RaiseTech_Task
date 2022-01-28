@@ -156,16 +156,16 @@
         background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_learge.png);
     };  
 }
-.c-image--property-for-top-galarry{
+.c-image--property-for-article-with-galarry{
+    height: 0;
+    padding-top: 27%;
+}
+.c-image--property-for-above-galarry{
     height: 0;
     padding-top: 50%;
     @include m.pc{
         padding-top: 30%
     };  
-}
-.c-image--property-for-middle-galarry{
-    height: 0;
-    padding-top: 25%; 
 }
 .c-image--property-for-galarry{
     height: 0;

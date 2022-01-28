@@ -895,7 +895,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .c-image--single-middle {
-  /* 横幅100%で綺麗に可変表示させる方法。height: 0、padding-top＝表示画像の高さ ÷ 表示画像の幅 × 100 */
+  /* 横幅100%で綺麗に可変表示させる方法。height: 0、padding-top: 画像の高さ調整 */
   height: 0;
   padding-top: 37%;
   background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_small.png);
@@ -925,19 +925,19 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.c-image--property-for-top-galarry {
+.c-image--property-for-article-with-galarry {
+  height: 0;
+  padding-top: 27%;
+}
+
+.c-image--property-for-above-galarry {
   height: 0;
   padding-top: 50%;
 }
 @media (min-width: 1025px) {
-  .c-image--property-for-top-galarry {
+  .c-image--property-for-above-galarry {
     padding-top: 30%;
   }
-}
-
-.c-image--property-for-middle-galarry {
-  height: 0;
-  padding-top: 25%;
 }
 
 .c-image--property-for-galarry {
@@ -1469,8 +1469,8 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.u-width--40per {
-  width: 40%;
+.u-width--50per {
+  width: 50%;
 }
 
 .u-width--60per {
