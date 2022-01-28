@@ -60,7 +60,6 @@
         top: 10px;
     }
 
-
     @include m.tb{
         width: 100%;
         margin: 40px 3%;
@@ -137,7 +136,7 @@
 }
 
 .c-image--single-middle{
-    /* 横幅100%で綺麗に可変表示させる方法。height: 0、padding-top＝表示画像の高さ ÷ 表示画像の幅 × 100 */
+    /* 横幅100%で綺麗に可変表示させる方法。height: 0、padding-top: 画像の高さ調整 */
     height: 0;
     padding-top: 37%;
     background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_small.png);
@@ -163,6 +162,10 @@
     @include m.pc{
         padding-top: 30%
     };  
+}
+.c-image--property-for-middle-galarry{
+    height: 0;
+    padding-top: 25%; 
 }
 .c-image--property-for-galarry{
     height: 0;

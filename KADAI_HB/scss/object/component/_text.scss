@@ -23,10 +23,10 @@
     };
 
 }
-.c-text--36-to-tb60{
-    font-size: 36px;
+.c-text--30-to-tb50{
+    font-size: 30px;
     @include m.tb{
-        font-size: 60px;
+        font-size: 50px;
     };
 }
 .c-text--36-to-pc40{
@@ -139,6 +139,11 @@
 }
 
 
+.c-text--M1m-lh23-16{
+    font-family: 'M+ 1m';
+    line-height: 23px;
+    font-size: 16px;
+}
 .c-text--M1m-bold-16{
     font-family: 'M+ 1m';
     font-weight: bold;

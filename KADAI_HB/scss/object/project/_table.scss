@@ -1,0 +1,17 @@
+@use '../../foundation/mixin' as m;
+
+.p-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.p-table__cell-1{
+    height: 77px;
+    width: 35%;
+    padding-left: 30px;
+    border:1px solid #707070;
+}
+.p-table__cell-2{
+    width: 65%;
+    padding-left: 30px;
+    border:1px solid #707070;
+}

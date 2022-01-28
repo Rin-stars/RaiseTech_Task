@@ -6,11 +6,26 @@
         margin-top: 50x;
     }
 }
+.u-mg-bottom--60{
+    margin-bottom: 60px;
+}
 .u-mg-bottom--30-to-tb60{
     margin-bottom: 30px;
     @include m.tb{
         margin-bottom: 60px;
     }
+}
+.u-mg-bottom--180-230-350{
+    margin-bottom: 180px;
+    @include m.tb{
+        margin-bottom: 230px;
+    }
+    @include m.pc{
+        margin-bottom: 350px;
+    }
+}
+.u-mg-left--3per{
+    margin-left: 3%;
 }
 .u-mg-left--10-20-40{
     margin-left: 10px;
