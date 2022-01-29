@@ -30,7 +30,7 @@
 }
 
 /**********************/
-/* フロントページ画像
+/* フロント画像
 /**********************/
 .c-image--front-top{
     width: auto;
@@ -85,7 +85,7 @@
 }
 
 /**********************/
-/* アーカイブページ画像
+/* アーカイブ画像
 /**********************/
 .c-image--archive-top{
     width: auto;
@@ -116,7 +116,7 @@
 }
 
 /**********************/
-/* Singleページ画像
+/* シングル画像
 /**********************/
 
 .c-image--single-top{
@@ -178,6 +178,24 @@
         padding-top: 20%;
         padding-left: 31.3%;
     };  
+}
+/**********************/
+/* ページ画像
+/**********************/
+.c-image--page-top{
+    width: auto;
+    height: 100%;
+    max-height: 225px;
+    padding: 110px 8%;
+    background-image: url(/images/img_page/SP__shop.png);
+    @include m.tb{
+        max-height: 500px;
+        padding: 240px 4%;
+        background-image: url(/images/img_page/TB__shop.png);
+    };
+    @include m.pc{
+        background-image: url(/images/img_page/PC__shop.png);
+    };
 }
 /**********************/
 /* マップ画像
